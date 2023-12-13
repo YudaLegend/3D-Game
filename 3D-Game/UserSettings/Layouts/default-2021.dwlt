@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1850
     height: 991
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Game
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 71
+  controlID: 21
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 437
     height: 941
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 72
+  controlID: 22
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 73
+  controlID: 23
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -270,15 +270,15 @@ MonoBehaviour:
     y: 0
     width: 1063
     height: 653
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 18}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
   - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -409,22 +409,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/2Dmages/OArielG/2DSimpleUIPack/Sprites
+    - Assets/Gradient
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/2Dmages/OArielG/2DSimpleUIPack/Sprites
+  - Assets/Gradient
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /home/pikachu/Desktop/Unity-Game/3D-Game/3D-Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 45}
-    m_SelectedIDs: c4630000
-    m_LastClickedID: 25540
-    m_ExpandedIDs: 00000000d8580000f8580000046500002c65000000ca9a3b
+    m_SelectedIDs: 76590000
+    m_LastClickedID: 22902
+    m_ExpandedIDs: 000000006c5800009a5800006059000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -452,7 +452,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d8580000
+    m_ExpandedIDs: 000000006c5800006e5800007058000072580000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -544,7 +544,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 275
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -581,10 +581,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1c9bffff1a9bffff249bffff229bffff189bffff169bffff289bffff269bffff309bffff2c9bffff2e9bffff209bffff1e9bffff2a9bffff
-      m_LastClickedID: -25814
-      m_ExpandedIDs: 1abdffffe6c8ffffb4dfffffcce0ffff92f9ffff38fbffff5c570000ae570000c0570000ea570000a8680000ca6800000e690000
+      scrollPos: {x: 0, y: 205}
+      m_SelectedIDs: 0085ffff
+      m_LastClickedID: -31488
+      m_ExpandedIDs: 0085ffff529dffff5a9fffff08a0ffff60a0ffff5aa3ffff32a5ffff7eb0ffff2ab1ffff9cb1ffff86b4ffffeeb4ffffcaccffff58d1ffffe6d5ffff0ed8ffff88dfffff50eaffff30fbffffd85e0000fc5e0000725f00000a64000078660000b86600000c67000030670000b0670000d8670000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -938,17 +938,17 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.043491397, y: 0.0040959176, z: -0.0006051828, w: 0.9992104}
+    m_Target: {x: -0.004487657, y: -0.025881432, z: -0.0005593435, w: 0.9998216}
     speed: 2
-    m_Value: {x: 0.043484222, y: 0.004095242, z: -0.00060508295, w: 0.9990456}
+    m_Value: {x: -0.0044869087, y: -0.025877116, z: -0.00055925024, w: 0.9996549}
   m_Size:
-    m_Target: 0.72207385
+    m_Target: 0.71334493
     speed: 2
-    m_Value: 0.72207385
+    m_Value: 0.71334493
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.5
@@ -1031,7 +1031,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1

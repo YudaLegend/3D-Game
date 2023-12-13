@@ -347,6 +347,7 @@
 "Assets/2Dmages/HealthHeartSystem/Scripts/HealthBarController.cs"
 "Assets/2Dmages/HealthHeartSystem/Scripts/HealthBarHUDTester.cs"
 "Assets/2Dmages/HealthHeartSystem/Scripts/PlayerStats.cs"
+"Assets/Scripts/ChangeScene.cs"
 "Assets/Scripts/Enemy1.cs"
 "Assets/Scripts/FollowCamera.cs"
 "Assets/Scripts/FollowPlayer.cs"
@@ -355,6 +356,7 @@
 "Assets/Scripts/PistolController.cs"
 "Assets/Scripts/Plataform.cs"
 "Assets/Scripts/ProyectilController.cs"
+"Assets/Scripts/StopMenu.cs"
 -langversion:9.0
 
 /deterministic

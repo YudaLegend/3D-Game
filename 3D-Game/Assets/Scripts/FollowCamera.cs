@@ -5,7 +5,7 @@ using UnityEngine;
 public class FollowCamera : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Camera camera;
+    public Camera ca;
     void Start()
     {
         
@@ -14,6 +14,6 @@ public class FollowCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.rotation=Quaternion.LookRotation(transform.position-camera.transform.position);
+        transform.rotation=Quaternion.LookRotation(transform.position-ca.transform.position);
     }
 }
