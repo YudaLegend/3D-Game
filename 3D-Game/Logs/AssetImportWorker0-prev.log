@@ -3,13 +3,13 @@ Branch:                  2021.3/staging
 Build type:              Release
 Batch mode:              YES
 System name:             Linux
-Distro version:          #99-Ubuntu SMP Mon Oct 30 20:42:41 UTC 2023
-Kernel version:          5.15.0-89-generic
+Distro version:          #38~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Nov  2 18:01:13 UTC 2
+Kernel version:          6.2.0-37-generic
 Architecture:            x86_64
-Available memory:        7772 MB
+Available memory:        7768 MB
 Using pre-set license
 Pro License: YES
-Desktop is 1920 x 1080 @ 60 Hz
+Desktop is 3840 x 1080 @ 60 Hz
 Initialize udev device monitor.
 
 COMMAND LINE ARGUMENTS:
@@ -24,7 +24,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-33437
+37597
 Successfully changed project path to: /home/pikachu/Desktop/Unity-Game/3D-Game/3D-Game
 /home/pikachu/Desktop/Unity-Game/3D-Game/3D-Game
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -56,11 +56,11 @@ Successfully changed project path to: /home/pikachu/Desktop/Unity-Game/3D-Game/3
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [139880220484480] Host "[IP] 192.168.1.49 [Port] 0 [Flags] 2 [Guid] 3770395848 [EditorId] 3770395848 [Version] 1048832 [Id] LinuxEditor(16,192.168.1.49) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [140328388690816] Host "[IP] 192.168.1.49 [Port] 0 [Flags] 2 [Guid] 3982671481 [EditorId] 3982671481 [Version] 1048832 [Id] LinuxEditor(16,192.168.1.49) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [139880220484480] Host "[IP] 192.168.1.49 [Port] 0 [Flags] 2 [Guid] 3770395848 [EditorId] 3770395848 [Version] 1048832 [Id] LinuxEditor(16,192.168.1.49) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [140328388690816] Host "[IP] 192.168.1.49 [Port] 0 [Flags] 2 [Guid] 3982671481 [EditorId] 3982671481 [Version] 1048832 [Id] LinuxEditor(16,192.168.1.49) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 186,98 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 105,05 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Initialize engine version: 2021.3.22f1 (b6c551784ba3)
 [Subsystems] Discovering subsystems at path /home/pikachu/Unity/Hub/Editor/2021.3.22f1/Editor/Data/Resources/UnitySubsystems
@@ -76,210 +76,94 @@ int_sprite GL_ARB_polygon_offset_clamp GL_ARB_post_depth_coverage GL_ARB_program
 L_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_buffer_range GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map_array GL_ARB_texture_filter_anisotropic GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_stencil8 GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_texture_view GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transform_feedback_overflow_query GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewpor
 t_array GL_ATI_blend_equation_separate GL_ATI_texture_float GL_EXT_EGL_image_storage GL_EXT_EGL_sync GL_EXT_abgr GL_EXT_blend_equation_separate GL_EXT_debug_label GL_EXT_demote_to_helper_invocation GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_memory_object GL_EXT_memory_object_fd GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_polygon_offset_clamp GL_EXT_provoking_vertex GL_EXT_semaphore GL_EXT_semaphore_fd GL_EXT_shader_framebuffer_fetch GL_EXT_shader_framebuffer_fetch_non_coherent GL_EXT_shader_integer_mix GL_EXT_shader_samples_identical GL_EXT_texture_array GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_filter_anisotropic GL_EXT_texture_integer GL_EXT_texture_sRGB GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_decode GL_EXT_texture_shadow_lod GL_EXT_texture_share
 d_exponent GL_EXT_texture_snorm GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_IBM_multimode_draw_arrays GL_INTEL_blackhole_render GL_INTEL_conservative_rasterization GL_INTEL_performance_query GL_INTEL_shader_atomic_float_minmax GL_INTEL_shader_integer_functions2 GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_KHR_context_flush_control GL_KHR_debug GL_KHR_no_error GL_KHR_parallel_shader_compile GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_sliced_3d GL_MESA_framebuffer_flip_y GL_MESA_pack_invert GL_MESA_shader_integer_functions GL_MESA_texture_signed_rgba GL_NV_alpha_to_coverage_dither_control GL_NV_compute_shader_derivatives GL_NV_conditional_render GL_NV_copy_image GL_NV_depth_clamp GL_NV_fragment_shader_interlock GL_NV_packed_depth_stencil GL_NV_texture_barrier GL_OES_EGL_image GL_S3_s3tc
-OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle -722878624
+OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle 2102138672
 Initialize mono
 Mono path[0] = '/home/pikachu/Unity/Hub/Editor/2021.3.22f1/Editor/Data/Managed'
 Mono path[1] = '/home/pikachu/Unity/Hub/Editor/2021.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-linux'
 Mono config path = '/home/pikachu/Unity/Hub/Editor/2021.3.22f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56307
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56866
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /home/pikachu/Unity/Hub/Editor/2021.3.22f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0,011180 seconds.
+Registered in 0,013446 seconds.
 Native extension for LinuxStandalone target not found
-Refreshing native plugins compatible for Editor in 155,77 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 104,51 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1,378 seconds
+- Completed reload, in  0,922 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1378ms)
-		BeginReloadAssembly (174ms)
+	ReloadAssembly (922ms)
+		BeginReloadAssembly (157ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (1015ms)
-			LoadAssemblies (169ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (618ms)
+			LoadAssemblies (155ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (301ms)
+			SetupTypeCache (148ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (89ms)
-			SetupLoadedEditorAssemblies (513ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (367ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
+				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (156ms)
+				RefreshPlugins (105ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (244ms)
-				ProcessInitializeOnLoadMethodAttributes (95ms)
+				ProcessInitializeOnLoadAttributes (189ms)
+				ProcessInitializeOnLoadMethodAttributes (60ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0,008301 seconds.
+Registered in 0,005545 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /home/pikachu/Desktop/Unity-Game/3D-Game/3D-Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image /home/pikachu/Desktop/Unity-Game/3D-Game/3D-Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
 Native extension for LinuxStandalone target not found
-Refreshing native plugins compatible for Editor in 0,65 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0,70 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2,128 seconds
+- Completed reload, in  1,500 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2128ms)
-		BeginReloadAssembly (195ms)
+	ReloadAssembly (1501ms)
+		BeginReloadAssembly (128ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
+			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (1735ms)
-			LoadAssemblies (136ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (1255ms)
+			LoadAssemblies (114ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (716ms)
+			SetupTypeCache (359ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (88ms)
-			SetupLoadedEditorAssemblies (763ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (121ms)
-				ProcessInitializeOnLoadAttributes (595ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
-Refreshing native plugins compatible for Editor in 0,55 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 3054 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (20,4 KB). Loaded Objects now: 3540.
-Memory consumption went from 122,2 MB to 122,2 MB.
-Total: 12,868220 ms (FindLiveObjects: 0,768036 ms CreateObjectMapping: 0,816776 ms MarkObjects: 11,137656 ms  DeleteObjects: 0,143532 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,008540 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /home/pikachu/Desktop/Unity-Game/3D-Game/3D-Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /home/pikachu/Desktop/Unity-Game/3D-Game/3D-Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for LinuxStandalone target not found
-Refreshing native plugins compatible for Editor in 1,26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2,866 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2867ms)
-		BeginReloadAssembly (319ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (15ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (94ms)
-		EndReloadAssembly (2311ms)
-			LoadAssemblies (219ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (738ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (128ms)
-			SetupLoadedEditorAssemblies (1150ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (144ms)
-				ProcessInitializeOnLoadAttributes (921ms)
-				ProcessInitializeOnLoadMethodAttributes (45ms)
-				AfterProcessingInitializeOnLoad (17ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2,99 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 3047 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 15 unused Assets / (22,0 KB). Loaded Objects now: 3543.
-Memory consumption went from 121,9 MB to 121,9 MB.
-Total: 11,570022 ms (FindLiveObjects: 1,116561 ms CreateObjectMapping: 0,506874 ms MarkObjects: 9,862051 ms  DeleteObjects: 0,079137 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 2252,440963 seconds.
-  path: Assets/Scripts/FollowCamera.cs
-  artifactKey: Guid(44a9e045de65cd72980a9a611007c0da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/FollowCamera.cs using Guid(44a9e045de65cd72980a9a611007c0da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '194d9eeb2a08633b58162482c8cc398d') in 0,020283 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,005584 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /home/pikachu/Desktop/Unity-Game/3D-Game/3D-Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /home/pikachu/Desktop/Unity-Game/3D-Game/3D-Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for LinuxStandalone target not found
-Refreshing native plugins compatible for Editor in 0,51 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1,471 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1472ms)
-		BeginReloadAssembly (165ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (48ms)
-		EndReloadAssembly (1154ms)
-			LoadAssemblies (88ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (360ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (54ms)
-			SetupLoadedEditorAssemblies (593ms)
+			RebuildScriptCaches (78ms)
+			SetupLoadedEditorAssemblies (646ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (70ms)
-				ProcessInitializeOnLoadAttributes (478ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (483ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
+				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2,33 ms, found 0 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0,66 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 3047 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 15 unused Assets / (21,9 KB). Loaded Objects now: 3546.
-Memory consumption went from 122,0 MB to 121,9 MB.
-Total: 4,084392 ms (FindLiveObjects: 0,267806 ms CreateObjectMapping: 0,234819 ms MarkObjects: 3,550391 ms  DeleteObjects: 0,029654 ms)
+Unloading 3155 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (20,4 KB). Loaded Objects now: 3645.
+Memory consumption went from 127,1 MB to 127,1 MB.
+Total: 7,361341 ms (FindLiveObjects: 0,758865 ms CreateObjectMapping: 0,540825 ms MarkObjects: 5,922385 ms  DeleteObjects: 0,136807 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -292,62 +176,110 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 100,575099 seconds.
-  path: Assets/Scripts/FollowCamera.cs
-  artifactKey: Guid(44a9e045de65cd72980a9a611007c0da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/FollowCamera.cs using Guid(44a9e045de65cd72980a9a611007c0da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86f49daeb6b474894bd8a7c473c4fbe9') in 0,007619 seconds 
+  Time since last request: 17713,255574 seconds.
+  path: Assets/Scenes/MainManu.unity
+  artifactKey: Guid(beb0efc9dbeede6919e5f6766e7901b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainManu.unity using Guid(beb0efc9dbeede6919e5f6766e7901b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acb1828223bddcf23ac0ddd53a1dead7') in 0,006195 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,008896 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /home/pikachu/Desktop/Unity-Game/3D-Game/3D-Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /home/pikachu/Desktop/Unity-Game/3D-Game/3D-Game/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for LinuxStandalone target not found
-Refreshing native plugins compatible for Editor in 0,97 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2,701 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2703ms)
-		BeginReloadAssembly (246ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (13ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (65ms)
-		EndReloadAssembly (2227ms)
-			LoadAssemblies (132ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (620ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (110ms)
-			SetupLoadedEditorAssemblies (1249ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (133ms)
-				ProcessInitializeOnLoadAttributes (1033ms)
-				ProcessInitializeOnLoadMethodAttributes (45ms)
-				AfterProcessingInitializeOnLoad (19ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3,76 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 3047 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 15 unused Assets / (21,9 KB). Loaded Objects now: 3549.
-Memory consumption went from 122,0 MB to 121,9 MB.
-Total: 13,564179 ms (FindLiveObjects: 0,564431 ms CreateObjectMapping: 0,492534 ms MarkObjects: 12,450818 ms  DeleteObjects: 0,054462 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 15,797539 seconds.
+  path: Assets/Scenes/Creadit.unity
+  artifactKey: Guid(d05acde49f763c170aa838ae1b4c641f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Creadit.unity using Guid(d05acde49f763c170aa838ae1b4c641f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1a3e17899b6ad8b039ad1ade5d34ed6') in 0,000867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38,726180 seconds.
+  path: Assets/Scenes/HowToPlay.unity
+  artifactKey: Guid(cab15e0ea1e8f57d0b47cc844fcf1430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/HowToPlay.unity using Guid(cab15e0ea1e8f57d0b47cc844fcf1430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e38b321f3bd907e0c16e7287d5d67d9') in 0,000903 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5,044453 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6a1d5b3ac5529dc4638e3fd5e3f663f') in 0,000847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12,182470 seconds.
+  path: Assets/Scenes/Level1.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level1.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a92b72a3d446b0f91e214c5c74cdb6cd') in 0,001288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11,995950 seconds.
+  path: Assets/Scenes/Level2.unity
+  artifactKey: Guid(08594f26513efac63bd1f8caa0648692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level2.unity using Guid(08594f26513efac63bd1f8caa0648692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db790cb1c3302b9763ffd4a1c4d40d8f') in 0,000854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1527,245615 seconds.
+  path: Assets/2Dmages/Pixel Skies DEMO
+  artifactKey: Guid(e9ccf38e777150b43aff3798ef7ca992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2Dmages/Pixel Skies DEMO using Guid(e9ccf38e777150b43aff3798ef7ca992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f195b1aea89912afa67c74d65b8d8bed') in 0,001196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2,225191 seconds.
+  path: Assets/2Dmages/Pixel Skies DEMO/Scenes
+  artifactKey: Guid(131a6b21c8605f84396be9f6751fb6e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2Dmages/Pixel Skies DEMO/Scenes using Guid(131a6b21c8605f84396be9f6751fb6e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c23e514d24f6b65fe96946cd87fc526') in 0,004518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4,363336 seconds.
+  path: Assets/2Dmages/Pixel Skies DEMO/Parallax Pixel Skies 240x135px
+  artifactKey: Guid(b4400281ec6090949a94e469868f9479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2Dmages/Pixel Skies DEMO/Parallax Pixel Skies 240x135px using Guid(b4400281ec6090949a94e469868f9479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54ab15b8a13b5068ce33b801925baaf2') in 0,004678 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,970559 seconds.
+  path: Assets/2Dmages/Pixel Skies DEMO/Parallax Pixel Skies 240x135px/Demo 01 Parallax Pixel Sky
+  artifactKey: Guid(d94fe28eb467a2f4eba1049870eeb052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2Dmages/Pixel Skies DEMO/Parallax Pixel Skies 240x135px/Demo 01 Parallax Pixel Sky using Guid(d94fe28eb467a2f4eba1049870eeb052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9939d28354b474c692defa21b8644dbf') in 0,000861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,092420 seconds.
+  path: Assets/2Dmages/Pixel Skies DEMO/Parallax Pixel Skies 240x135px/Demo 01 Parallax Pixel Sky/demo01_PixelSky_layer01.png
+  artifactKey: Guid(2b6d21890603e8441b3dadff70792455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2Dmages/Pixel Skies DEMO/Parallax Pixel Skies 240x135px/Demo 01 Parallax Pixel Sky/demo01_PixelSky_layer01.png using Guid(2b6d21890603e8441b3dadff70792455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5bd36f1cecb3755aafd5b849b369452') in 0,075929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6,468310 seconds.
+  path: Assets/2Dmages/Pixel Skies DEMO/Parallax Pixel Skies 240x135px/Demo 02 Parallax Pixel Sky
+  artifactKey: Guid(c7654f64ca59a6a42b8dd9d35db4e9ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2Dmages/Pixel Skies DEMO/Parallax Pixel Skies 240x135px/Demo 02 Parallax Pixel Sky using Guid(c7654f64ca59a6a42b8dd9d35db4e9ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd553a11fcc2bdca2a02f8d448b699c7') in 0,000738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,075151 seconds.
+  path: Assets/2Dmages/Pixel Skies DEMO/Parallax Pixel Skies 240x135px/Demo 02 Parallax Pixel Sky/demo02_PixelSky_layer01.png
+  artifactKey: Guid(168d4c89695ec554d84b438bd781f3a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2Dmages/Pixel Skies DEMO/Parallax Pixel Skies 240x135px/Demo 02 Parallax Pixel Sky/demo02_PixelSky_layer01.png using Guid(168d4c89695ec554d84b438bd781f3a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6471460bd1dfaa69d42687e19b2f83dc') in 0,009974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000017 seconds.
+  path: Assets/2Dmages/Pixel Skies DEMO/Parallax Pixel Skies 240x135px/Demo 02 Parallax Pixel Sky/demo02_PixelSky_layer03.png
+  artifactKey: Guid(6fc934c28f4a61548a11c8c0767f4834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2Dmages/Pixel Skies DEMO/Parallax Pixel Skies 240x135px/Demo 02 Parallax Pixel Sky/demo02_PixelSky_layer03.png using Guid(6fc934c28f4a61548a11c8c0767f4834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87077e9884a24a837305d3d0e2723944') in 0,011559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6,019777 seconds.
+  path: Assets/2Dmages/Pixel Skies DEMO/Pixel Skies 240x135px
+  artifactKey: Guid(bd4b18ef6c3dc5b4f902005102b107c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2Dmages/Pixel Skies DEMO/Pixel Skies 240x135px using Guid(bd4b18ef6c3dc5b4f902005102b107c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b2f0a668e5eed4455f68a2eed80b349') in 0,000603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,058053 seconds.
+  path: Assets/2Dmages/Pixel Skies DEMO/Pixel Skies 240x135px/demo01_PixelSky.png
+  artifactKey: Guid(0094c1ddec51f7a4db1d4a203ffdee0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2Dmages/Pixel Skies DEMO/Pixel Skies 240x135px/demo01_PixelSky.png using Guid(0094c1ddec51f7a4db1d4a203ffdee0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '543acf2682a12ffd8f799c611bea5557') in 0,007163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,016801 seconds.
+  path: Assets/2Dmages/Pixel Skies DEMO/Pixel Skies 240x135px/demo03_PixelSky.png
+  artifactKey: Guid(3c522dfe25a7896468abb57f4bf0f186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2Dmages/Pixel Skies DEMO/Pixel Skies 240x135px/demo03_PixelSky.png using Guid(3c522dfe25a7896468abb57f4bf0f186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ae570b8b9312d9f5f33925e0a897b61') in 0,019569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000022 seconds.
+  path: Assets/2Dmages/Pixel Skies DEMO/Pixel Skies 240x135px/demo05_PixelSky.png
+  artifactKey: Guid(a4fa243ef9771f64bb296e61b4d54881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2Dmages/Pixel Skies DEMO/Pixel Skies 240x135px/demo05_PixelSky.png using Guid(a4fa243ef9771f64bb296e61b4d54881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13874364e59d49143cb1d54debb6a808') in 0,022085 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

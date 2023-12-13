@@ -41,11 +41,12 @@
      <Compile Include="Assets/Scripts/PistolController.cs" />
      <Compile Include="Assets/Scripts/ProyectilController.cs" />
      <Compile Include="Assets/Scripts/MovePlayer.cs" />
-     <Compile Include="Assets/Scripts/Plataform.cs" />
-     <Compile Include="Assets/Scripts/FollowPlayer.cs" />
-     <Compile Include="Assets/2Dmages/HealthHeartSystem/Scripts/PlayerStats.cs" />
      <Compile Include="Assets/2Dmages/HealthHeartSystem/Scripts/HealthBarController.cs" />
+     <Compile Include="Assets/Scripts/Plataform.cs" />
+     <Compile Include="Assets/2Dmages/HealthHeartSystem/Scripts/PlayerStats.cs" />
      <Compile Include="Assets/2Dmages/HealthHeartSystem/Scripts/HealthBarHUDTester.cs" />
+     <Compile Include="Assets/Scripts/FollowPlayer.cs" />
+     <Compile Include="Assets/Scripts/LevelManeger.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
@@ -690,6 +691,9 @@
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>/home/pikachu/Desktop/Unity-Game/3D-Game/3D-Game/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+        <HintPath>/home/pikachu/Desktop/Unity-Game/3D-Game/3D-Game/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
         <HintPath>/home/pikachu/Desktop/Unity-Game/3D-Game/3D-Game/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
@@ -723,6 +727,9 @@
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
         <HintPath>/home/pikachu/Desktop/Unity-Game/3D-Game/3D-Game/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>/home/pikachu/Desktop/Unity-Game/3D-Game/3D-Game/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
         <HintPath>/home/pikachu/Desktop/Unity-Game/3D-Game/3D-Game/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
     </Reference>
@@ -755,6 +762,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="TextToTMP.Editor.csproj">
+      <Project>{b6043aa0-9721-bda1-49d0-65ed18aadc59}</Project>
+      <Name>TextToTMP.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
