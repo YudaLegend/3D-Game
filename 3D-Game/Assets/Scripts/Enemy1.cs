@@ -69,6 +69,10 @@ public class Enemy1 : MonoBehaviour
         if(other.gameObject.tag == "Obstacle"){
             dir = !dir;
         }
+        if (other.gameObject.tag == "bullet")
+        {
+            shield = shield - 50;
+        }
     }
 
     /// <summary>
