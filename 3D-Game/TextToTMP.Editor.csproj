@@ -36,12 +36,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Plugins/TextToTMP/Editor/Utilities.cs" />
-     <Compile Include="Assets/Plugins/TextToTMP/Editor/ReferenceCollection.cs" />
-     <Compile Include="Assets/Plugins/TextToTMP/Editor/ComponentProperties.cs" />
-     <Compile Include="Assets/Plugins/TextToTMP/Editor/ComponentUpgrade.cs" />
-     <Compile Include="Assets/Plugins/TextToTMP/Editor/ScriptUpgrade.cs" />
      <Compile Include="Assets/Plugins/TextToTMP/Editor/TextToTMPWindow.cs" />
+     <Compile Include="Assets/Plugins/TextToTMP/Editor/Utilities.cs" />
+     <Compile Include="Assets/Plugins/TextToTMP/Editor/ScriptUpgrade.cs" />
+     <Compile Include="Assets/Plugins/TextToTMP/Editor/ReferenceCollection.cs" />
+     <Compile Include="Assets/Plugins/TextToTMP/Editor/ComponentUpgrade.cs" />
+     <Compile Include="Assets/Plugins/TextToTMP/Editor/ComponentProperties.cs" />
      <None Include="Assets/Plugins/TextToTMP/Editor/TextToTMP.Editor.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>/home/pikachu/Unity/Hub/Editor/2021.3.22f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

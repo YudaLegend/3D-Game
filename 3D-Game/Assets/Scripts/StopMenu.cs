@@ -49,4 +49,10 @@ public class StopMenu : MonoBehaviour
         Time.timeScale = 0f;
         canvasComponent.enabled = true;
     }
+
+    public void Continue()
+    {
+        Time.timeScale = 1f;
+        canvasComponent.enabled = false;
+    }
 }

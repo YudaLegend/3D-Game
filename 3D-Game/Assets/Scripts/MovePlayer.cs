@@ -77,7 +77,12 @@ public class MovePlayer : MonoBehaviour
             orientation = Quaternion.AngleAxis(180.0f, Vector3.up);
         else
             orientation = Quaternion.FromToRotation(startDirection, currentDirection);
-        transform.rotation = orientation;
+        
+        if(!dir)transform.rotation = orientation;
+        else{
+            transform.rotation = orientation;
+            transform.rotation *= Quaternion.Euler(0,180f,0);
+        }
 
         // Apply up-down movement
         position = transform.position;
@@ -135,7 +140,7 @@ public class MovePlayer : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Entered collision with " + collision.gameObject.name);
-        bigJump = true;
+
     }
 
     /// <summary>
