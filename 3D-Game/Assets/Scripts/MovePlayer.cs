@@ -4,23 +4,18 @@ using UnityEngine;
 public class MovePlayer : MonoBehaviour
 {
     public float rotationSpeed, jumpSpeed, gravity;
-
     Vector3 startDirection;
     public float speedY;
-
     bool cicle; // false -> outern 
     bool changeButton;
     public bool inmortal;
     bool changeInmortal;
     // Start is called before the first frame update
     public bool dir;
-
     public float dashTimer;
     bool changeDash;
-
     public int vida;
     public float dashEnergy;
-
     public bool bigJump;
     void Start()
     {
@@ -153,7 +148,6 @@ public class MovePlayer : MonoBehaviour
         if(other.gameObject.tag == "Jumper")
             bigJump = true;
     }
-
     void OnTriggerExit(Collider other)
     {
         Debug.Log("Exited collision with " + other.gameObject.name);
@@ -223,10 +217,6 @@ public class MovePlayer : MonoBehaviour
             dir = true;
         }
 
-    }
-
-    void Shoot(){
-        
     }
 }
 

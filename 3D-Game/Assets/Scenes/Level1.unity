@@ -348,7 +348,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5764371}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -5779,6 +5779,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2584603361974446684, guid: f436db8bb0efe007da2698a0bd19d5b8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2584603361974446687, guid: f436db8bb0efe007da2698a0bd19d5b8, type: 3}
       propertyPath: m_Height
       value: 1.34
@@ -5789,7 +5793,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2584603361974446687, guid: f436db8bb0efe007da2698a0bd19d5b8, type: 3}
       propertyPath: m_Center.y
-      value: 0.4
+      value: 0.56
       objectReference: {fileID: 0}
     - target: {fileID: 2617966242948316843, guid: f436db8bb0efe007da2698a0bd19d5b8, type: 3}
       propertyPath: m_RootOrder
