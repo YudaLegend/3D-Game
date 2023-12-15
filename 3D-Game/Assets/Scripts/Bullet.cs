@@ -27,8 +27,7 @@ public class Bullet : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("Entered collision with " + other.gameObject.name);
-        if (other.gameObject.tag == "Enemy")
-            Destroy(gameObject);
+        Destroy(gameObject);
     }
     // Update is called once per frame
     void Update()

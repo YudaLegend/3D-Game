@@ -22,7 +22,7 @@ public class Enemy1 : MonoBehaviour
         startDirection = transform.position - transform.parent.position;
         startDirection.y = 0.0f;
         startDirection.Normalize();
-        dir = false;
+        dir = true;
         health = maxHealth;
         shield = maxSheild;
         s.value = shield/maxSheild;
@@ -55,7 +55,11 @@ public class Enemy1 : MonoBehaviour
             orientation = Quaternion.AngleAxis(180.0f, Vector3.up);
         else
             orientation = Quaternion.FromToRotation(startDirection, currentDirection);
+        
         transform.rotation = orientation;
+        if(!dir){
+            transform.rotation *= Quaternion.Euler(0,180f,0);
+        }
     }
 
 
