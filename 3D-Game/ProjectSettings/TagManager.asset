@@ -9,6 +9,7 @@ TagManager:
   - Obstacle
   - bullet
   - Fireball
+  - trap
   layers:
   - Default
   - TransparentFX

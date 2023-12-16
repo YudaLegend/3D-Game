@@ -149,6 +149,8 @@ public class MovePlayer : MonoBehaviour
             bigJump = true;
         if (other.gameObject.tag == "Fireball")
             vida = vida - 1;
+        if (other.gameObject.tag == "trap")
+            vida = vida - 1;
 
     }
     void OnTriggerExit(Collider other)
