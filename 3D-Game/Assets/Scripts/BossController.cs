@@ -1,0 +1,75 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BossController : MonoBehaviour
+{
+    public GameObject FireballPrefab;
+    public Transform bulletSpawnPoint;
+    public GameObject enemy1;
+    public GameObject enemy2;
+    public GameObject enemy3;
+
+    private float myTime = 0.0f;
+    
+    private float nextSpell = 3f;
+
+    private float TimeEnemy = 0.0f;
+    private float SpellEnemy = 5;
+    private GameObject newFireball;
+    private GameObject enemy;
+
+    private static Vector3[] fireballSpawn = new Vector3[] { new Vector3(2.8f, 3, 0), new Vector3(-2.8f, 3, 0) , new Vector3(2.5f, 3, 1f), new Vector3(0, 3, -3f), new Vector3(-1.3f, 3, -3f),
+    new Vector3(0, 3, 3f),new Vector3(-2f, 3, 2.4f)};
+
+
+    private static Vector3[] enemySpawn = new Vector3[] { new Vector3(2.8f, 0, 0), new Vector3(-2.8f, 0, 0) , new Vector3(2.5f, 0, 1f), new Vector3(0, 0, -3f), new Vector3(-1.3f, 0, -3f),
+    new Vector3(0, 0, 3f),new Vector3(-2f, 0, 2.4f)};
+
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //newFireball = Instantiate(FireballPrefab, bulletSpawnPoint.position, Quaternion.identity) as GameObject;
+
+        myTime += Time.deltaTime;
+        TimeEnemy += Time.deltaTime;
+        if (myTime >= nextSpell) {
+            Vector3 pos = fireballSpawn[Random.Range(0, fireballSpawn.Length)];
+            myTime = 0.0F;
+            newFireball = Instantiate(FireballPrefab, this.transform.position+ pos, Quaternion.identity) as GameObject;
+
+        }
+
+        if (TimeEnemy >= SpellEnemy)
+        {
+            TimeEnemy = 0.0F;
+
+            int aux = Random.Range(0, 3);
+            if (aux == 0) {
+                enemy = enemy1;
+            }
+            else if (aux == 1)
+            {
+                enemy = enemy2;
+            }
+            else {
+                enemy = enemy3;
+            }
+
+
+            Vector3 pos = enemySpawn[Random.Range(0, enemySpawn.Length)];
+            enemy = Instantiate(enemy1, this.transform.position + pos, Quaternion.identity) as GameObject;
+
+        }
+
+
+    }
+}

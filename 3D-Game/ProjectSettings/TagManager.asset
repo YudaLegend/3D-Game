@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Obstacle
   - bullet
+  - Fireball
   layers:
   - Default
   - TransparentFX

@@ -147,6 +147,9 @@ public class MovePlayer : MonoBehaviour
         Debug.Log("Entered collision with " + other.gameObject.name);
         if(other.gameObject.tag == "Jumper")
             bigJump = true;
+        if (other.gameObject.tag == "Fireball")
+            vida = vida - 1;
+
     }
     void OnTriggerExit(Collider other)
     {
