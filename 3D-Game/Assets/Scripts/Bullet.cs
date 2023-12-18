@@ -26,7 +26,7 @@ public class Bullet : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Entered collision with " + other.gameObject.name);
+        Debug.Log("Entered collision with " + other.gameObject.tag);
         Destroy(gameObject);
     }
     // Update is called once per frame
@@ -53,7 +53,7 @@ public class Bullet : MonoBehaviour
     void Moving()
     {
         CharacterController charControl = GetComponent<CharacterController>();
-        Debug.Log(charControl);
+        //Debug.Log(charControl);
 
         Vector3 position;
         float angle;

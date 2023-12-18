@@ -89,7 +89,7 @@ public class MovePlayer : MonoBehaviour
         if (charControl.isGrounded)
         {
             if(bigJump && jumpSpeed != 10){
-                jumpSpeed = 10;
+                jumpSpeed = 15;
             }else if(!bigJump && jumpSpeed != 5){
                 jumpSpeed = 5;
             }

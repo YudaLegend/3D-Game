@@ -359,6 +359,7 @@
 "Assets/Scripts/Level1Control.cs"
 "Assets/Scripts/LevelManeger.cs"
 "Assets/Scripts/MovePlayer.cs"
+"Assets/Scripts/NewBehaviourScript.cs"
 "Assets/Scripts/PistolController.cs"
 "Assets/Scripts/Plataform.cs"
 "Assets/Scripts/ProyectilController.cs"

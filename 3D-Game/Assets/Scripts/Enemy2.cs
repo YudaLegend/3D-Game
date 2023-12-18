@@ -60,6 +60,7 @@ public class Enemy2 : MonoBehaviour
         if(!dir){
             transform.rotation *= Quaternion.Euler(0,180f,0);
         }
+        if(Input.GetKey(KeyCode.F)){Destroy(gameObject);}
     }
 
 

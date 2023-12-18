@@ -41,7 +41,6 @@ public class Plataform : MonoBehaviour
         if(Input.GetKey(KeyCode.O) && !opencheck){
             open();
             opencheck = true;
-            timer = 1;
             /*Moving();
             Vector3 t = Vector3.zero;
             t.y = transform.position.y;
@@ -51,7 +50,7 @@ public class Plataform : MonoBehaviour
             opencheck = false;
         }
         if(Input.GetKey(KeyCode.P) && !closecheck){
-            timer = 1;
+            
             close();
             closecheck = true;
         }else if(Input.GetKeyUp(KeyCode.O) && closecheck){
@@ -69,11 +68,13 @@ public class Plataform : MonoBehaviour
 
     public void open()
     {
+        timer = 1f;
         state = 1;
     }
 
     public void close()
     {
+        timer = 0.5f;
         state = 2;
     }
 
@@ -88,12 +89,12 @@ public class Plataform : MonoBehaviour
 
     void closing()
     {
+        
         Vector3 pos = iniPos;
         float phrase = timer*(-20)+1;
         if(phrase > 1) phrase = 1; 
         pos.x = (float)radi*Mathf.Sin(angle)*(phrase);
         pos.z = (float)radi*Mathf.Cos(angle)*(phrase);
-        
         transform.position = pos;
     }
 

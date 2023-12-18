@@ -55,6 +55,7 @@
      <Compile Include="Assets/2Dmages/HealthHeartSystem/Scripts/HealthBarHUDTester.cs" />
      <Compile Include="Assets/Scripts/FireballController.cs" />
      <Compile Include="Assets/Scripts/FollowPlayer.cs" />
+     <Compile Include="Assets/Scripts/NewBehaviourScript.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />

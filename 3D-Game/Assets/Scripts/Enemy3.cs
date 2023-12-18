@@ -61,6 +61,7 @@ public class Enemy3 : MonoBehaviour
             transform.rotation *= Quaternion.Euler(0,180f,0);
         }
         transform.rotation *= Quaternion.Euler(0,-45.0f,0);
+        if(Input.GetKey(KeyCode.F)){Destroy(gameObject);}
     }
 
 
