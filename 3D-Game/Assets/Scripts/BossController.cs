@@ -38,7 +38,6 @@ public class BossController : MonoBehaviour
     void Update()
     {
         //newFireball = Instantiate(FireballPrefab, bulletSpawnPoint.position, Quaternion.identity) as GameObject;
-
         myTime += Time.deltaTime;
         TimeEnemy += Time.deltaTime;
         if (myTime >= nextSpell) {
