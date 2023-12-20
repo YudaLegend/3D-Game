@@ -10,6 +10,9 @@ public class BossController : MonoBehaviour
     public GameObject enemy2;
     public GameObject enemy3;
 
+
+    public int numberEnemy;
+
     private float myTime = 0.0f;
     
     private float nextSpell = 3f;
@@ -18,6 +21,8 @@ public class BossController : MonoBehaviour
     private float SpellEnemy = 5;
     private GameObject newFireball;
     private GameObject enemy;
+
+    private int actualEnemy;
 
     private static Vector3[] fireballSpawn = new Vector3[] { new Vector3(2.8f, 3, 0), new Vector3(-2.8f, 3, 0) , new Vector3(2.5f, 3, 1f), new Vector3(0, 3, -3f), new Vector3(-1.3f, 3, -3f),
     new Vector3(0, 3, 3f),new Vector3(-2f, 3, 2.4f)};
@@ -31,7 +36,8 @@ public class BossController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        numberEnemy = 5;
+        actualEnemy = 0;
     }
 
     // Update is called once per frame
@@ -65,8 +71,8 @@ public class BossController : MonoBehaviour
 
 
             Vector3 pos = enemySpawn[Random.Range(0, enemySpawn.Length)];
-            enemy = Instantiate(enemy1, this.transform.position + pos, Quaternion.identity) as GameObject;
-
+            enemy = Instantiate(enemy, this.transform.position + pos, Quaternion.identity) as GameObject;
+            ++actualEnemy;
         }
 
 
