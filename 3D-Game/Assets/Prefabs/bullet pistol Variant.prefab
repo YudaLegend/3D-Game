@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 128107330, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
       propertyPath: m_Radius
-      value: 0.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 128107330, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
       propertyPath: m_StepOffset
@@ -77,7 +77,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7742814866411024305, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
       propertyPath: m_Name
-      value: bullet pistol
+      value: bullet pistol Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
