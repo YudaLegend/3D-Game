@@ -74,10 +74,10 @@ public class Enemy1 : MonoBehaviour
         if(other.gameObject.tag == "Obstacle"){
             dir = !dir;
         }
-        if (other.gameObject.tag == "bullet")
-        {
-            shield = shield - 50;
-        }
+    }
+
+    public void BeDamaged(){
+        shield = shield - 50;
     }
 
     /// <summary>
@@ -95,7 +95,7 @@ public class Enemy1 : MonoBehaviour
         Vector3 position;
         float angle;
         Vector3 direction, target;
-        rotationSpeed = 100;
+        rotationSpeed = 10;
         position = transform.position;
         angle = rotationSpeed * Time.deltaTime;
         direction = position - transform.parent.position;

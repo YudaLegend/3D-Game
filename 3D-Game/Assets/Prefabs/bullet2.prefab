@@ -205,7 +205,7 @@ CharacterController:
   m_StepOffset: 0
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: -0.05, y: -2.53, z: 1.2}
 --- !u!33 &5431666691244043751
 MeshFilter:
   m_ObjectHideFlags: 0

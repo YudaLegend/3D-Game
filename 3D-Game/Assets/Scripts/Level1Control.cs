@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 public class Level1Control : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -19,6 +20,23 @@ public class Level1Control : MonoBehaviour
         opended = false;
         closed = true;
         state = 1;
+        //setDeActive();
+        GameObject gb = gameObject.transform.Find("Tower").Find("Plataform1").Find("BigJump").gameObject;
+        gb.SetActive(false);
+        gb = gameObject.transform.Find("Tower").Find("Plataform2").Find("BigJump").gameObject;
+        gb.SetActive(false);
+        gb = gameObject.transform.Find("Tower").Find("Plataform3").Find("BigJump").gameObject;
+        gb.SetActive(false);
+        gb = gameObject.transform.Find("Tower").Find("Plataform4").Find("BigJump").gameObject;
+        gb.SetActive(false);
+        gb = gameObject.transform.Find("Tower").Find("Plataform5").Find("BigJump").gameObject;
+        gb.SetActive(false);
+        gb = gameObject.transform.Find("Tower").Find("Plataform6").Find("BigJump").gameObject;
+        gb.SetActive(false);
+        gb = gameObject.transform.Find("Tower").Find("Plataform7").Find("BigJump").gameObject;
+        gb.SetActive(false);
+        gb = gameObject.transform.Find("Tower").Find("Plataform8").Find("BigJump").gameObject;
+        gb.SetActive(false);
     }
 
     // Update is called once per frame
@@ -33,7 +51,11 @@ public class Level1Control : MonoBehaviour
                     counter++;
                 }  
             }
-            if(counter <= 0) state = 2;
+            if(counter <= 0) 
+            {
+                gameObject.transform.Find("Tower").Find("Plataform" + level).Find("BigJump").gameObject.SetActive(true);
+                state = 2;
+            }
         }else if(state == 2){
 
             if(!opended){
@@ -50,6 +72,7 @@ public class Level1Control : MonoBehaviour
             }
         }else if(state == 3){
             //Instanciate(level);
+            if (level == 9) SceneManager.LoadScene(5, LoadSceneMode.Single);
             state = 1;
         }
     }
@@ -66,5 +89,14 @@ public class Level1Control : MonoBehaviour
     void Instanciate(int l){
         Instantiate(enemy2, new Vector3(0, 0, 0), Quaternion.identity);
         Instantiate(enemy3, new Vector3(0, 0, 0), Quaternion.identity);
+    }
+
+    void setDeActive(){
+        
+        for(int i = 1; i < 10; i++){
+            Debug.Log(i);
+            GameObject gb = gameObject.transform.Find("Tower").Find("Plataform" + level).Find("BigJump").gameObject;
+            gb.SetActive(false);
+        }
     }
 }

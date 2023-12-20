@@ -11,7 +11,7 @@ public class StopMenu : MonoBehaviour
     {
         pauseButton = false;
         canvasComponent = GetComponent<Canvas>();
-
+        Time.timeScale = 1f;
         // Ensure we have a Canvas component attached
         if (canvasComponent == null)
         {

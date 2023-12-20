@@ -96,7 +96,7 @@ public class Enemy3 : MonoBehaviour
         Vector3 position;
         float angle;
         Vector3 direction, target;
-        rotationSpeed = 100;
+        rotationSpeed = 10;
         position = transform.position;
         angle = rotationSpeed * Time.deltaTime;
         direction = position - transform.parent.position;

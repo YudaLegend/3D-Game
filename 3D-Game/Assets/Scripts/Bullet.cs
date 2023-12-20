@@ -26,8 +26,18 @@ public class Bullet : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Entered collision with " + other.gameObject.tag);
-        Destroy(gameObject);
+        Debug.Log("Gun Entered collision with " + other.gameObject.tag);
+        if(other.gameObject.tag == "Enemy") {
+            Enemy1 e = other.gameObject.GetComponent<Enemy1>();
+            if (e != null)
+            {
+                e.BeDamaged();
+            }
+        }
+        if(other.gameObject.tag != "bullet") {
+            Destroy(gameObject);
+        }
+        
     }
     // Update is called once per frame
     void Update()

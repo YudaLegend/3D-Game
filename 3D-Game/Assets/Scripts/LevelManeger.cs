@@ -23,4 +23,8 @@ public class LevelManeger : MonoBehaviour
     public void quit(){
         SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
+
+    public void die(){
+        SceneManager.LoadScene(5, LoadSceneMode.Single);
+    }
 }
