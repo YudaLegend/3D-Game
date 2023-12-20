@@ -19,7 +19,7 @@ public class Enemy2 : MonoBehaviour
     void Start()
     {
         // Store starting direction of the player with respect to the axis of the level
-        startDirection = transform.position - transform.parent.position;
+        startDirection = transform.position - transform.parent.parent.parent.position;
         startDirection.y = 0.0f;
         startDirection.Normalize();
         dir = true;
@@ -44,7 +44,7 @@ public class Enemy2 : MonoBehaviour
         Moving();
         // Correct orientation of player
         // Compute current direction
-        Vector3 currentDirection = transform.position - transform.parent.position;
+        Vector3 currentDirection = transform.position - transform.parent.parent.parent.position;
         currentDirection.y = 0.0f;
         currentDirection.Normalize();
         // Change orientation of player accordingly
@@ -60,7 +60,7 @@ public class Enemy2 : MonoBehaviour
         if(!dir){
             transform.rotation *= Quaternion.Euler(0,180f,0);
         }
-        if(Input.GetKey(KeyCode.F)){Destroy(gameObject);}
+        //if(Input.GetKey(KeyCode.F)){Destroy(gameObject);}
     }
 
 
@@ -98,10 +98,10 @@ public class Enemy2 : MonoBehaviour
         rotationSpeed = 10;
         position = transform.position;
         angle = rotationSpeed * Time.deltaTime;
-        direction = position - transform.parent.position;
+        direction = position - transform.parent.parent.parent.position;
         if (!dir)
         {
-            target = transform.parent.position + Quaternion.AngleAxis(angle, Vector3.up) * direction;
+            target = transform.parent.parent.parent.position + Quaternion.AngleAxis(angle, Vector3.up) * direction;
             if (charControl.Move(target - position) != CollisionFlags.None)
             {
                 transform.position = position;
@@ -110,7 +110,7 @@ public class Enemy2 : MonoBehaviour
         }
         if (dir)
         {
-            target = transform.parent.position + Quaternion.AngleAxis(-angle, Vector3.up) * direction;
+            target = transform.parent.parent.parent.position + Quaternion.AngleAxis(-angle, Vector3.up) * direction;
             if (charControl.Move(target - position) != CollisionFlags.None)
             {
                 transform.position = position;
@@ -119,4 +119,7 @@ public class Enemy2 : MonoBehaviour
         }
     }
 
+    public void die(){
+        Destroy(gameObject);
+    }
 }

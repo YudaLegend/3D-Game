@@ -24,7 +24,7 @@ public class Plataform : MonoBehaviour
         state = 0;
         opencheck = false;
         closecheck = false;
-        openradi = -20*radi;
+        openradi = -30*radi;
         iniPos = transform.position;
         angle = Mathf.Atan2(transform.position.x, transform.position.z);
     }
@@ -68,13 +68,13 @@ public class Plataform : MonoBehaviour
 
     public void open()
     {
-        timer = 1f;
+        timer = 0.25f;
         state = 1;
     }
 
     public void close()
     {
-        timer = 0.5f;
+        timer = 1.0f;
         state = 2;
     }
 

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -44,7 +45,10 @@ public class Level1Control : MonoBehaviour
     {
         if(state == 1){
             counter = 0;
-            foreach (Transform child in gameObject.transform)
+            if(Input.GetKey(KeyCode.F)){
+                killAll();
+            }
+            foreach (Transform child in gameObject.transform.Find("Tower").Find("Plataform" + level).Find("Enemies").gameObject.transform)
             {
                 if (child.tag == "Enemy"){
                     //Debug.Log(child.tag);
@@ -72,7 +76,7 @@ public class Level1Control : MonoBehaviour
             }
         }else if(state == 3){
             //Instanciate(level);
-            if (level == 9) SceneManager.LoadScene(5, LoadSceneMode.Single);
+            if (level == 9) SceneManager.LoadScene(6, LoadSceneMode.Single);
             state = 1;
         }
     }
@@ -97,6 +101,39 @@ public class Level1Control : MonoBehaviour
             Debug.Log(i);
             GameObject gb = gameObject.transform.Find("Tower").Find("Plataform" + level).Find("BigJump").gameObject;
             gb.SetActive(false);
+        }
+    }
+
+    void killAll(){
+        foreach (Transform child in gameObject.transform.Find("Tower").Find("Plataform" + level).Find("Enemies").gameObject.transform)
+        {
+            try
+            {
+                // your code segment which might throw an exception
+                child.gameObject.GetComponent<Enemy1>().die();
+            }
+            catch (Exception ex)
+            {
+                Debug.LogException(ex, this);
+            }
+            try
+            {
+                // your code segment which might throw an exception
+                child.gameObject.GetComponent<Enemy2>().die();
+            }
+            catch (Exception ex)
+            {
+                Debug.LogException(ex, this);
+            }
+            try
+            {
+                // your code segment which might throw an exception
+                child.gameObject.GetComponent<Enemy3>().die();
+            }
+            catch (Exception ex)
+            {
+                Debug.LogException(ex, this);
+            }
         }
     }
 }
