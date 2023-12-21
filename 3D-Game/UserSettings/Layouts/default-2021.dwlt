@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 21
+  controlID: 85
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 22
+  controlID: 86
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 23
+  controlID: 87
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -189,8 +189,8 @@ MonoBehaviour:
     y: 0
     width: 334
     height: 580
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -242,8 +242,8 @@ MonoBehaviour:
     y: 580
     width: 1374
     height: 361
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 15}
@@ -269,8 +269,8 @@ MonoBehaviour:
     y: 0
     width: 476
     height: 941
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -403,21 +403,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 7c5fffffc472ffff1273ffff5c73ffff2e78ffff7478ffffc278ffff0879ffff227affff4483fffffe86ffff8c8affff8e8affffa28dffff249bfffff89effff20a0ffff94a0ffffa8a2ffffc2bafffffec0ffffd8deffffe4deffff44dfffff96dfffffc8e3ffff16e4ffffe0e8ffffa0e9ffff2ceeffff30fbffffb6580000105900002c59000096590000287600004a790000527a00002c8300009a830000ba830000c2830000908d0000728e0000f08e00006e970000fa9700006a9c0000da9c0000169e0000e2c600000ac700003ad50000c6d50000
+      m_ExpandedIDs: 4ea6ffffbea6ffff7ea7ffffeea7ffffaea8ffff1ea9ffffdea9ffff4eaaffff88b1ffffaeccffff1ecdffff7ccdffffdecdffff4eceffffacceffff0ecfffff7ecfffff3ed0ffffaed0ffff0cd1ffff98e0ffff40e1ffff56e2ffff96e2ffffd6e2ffff3ee3ffffa6e3ffff12e4ffff52e4ffff54e4ffffeae5fffface7ffff8af0ffff30fbffffb6580000105900009859000052710000cc720000ec72000058730000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Enemies
+        m_OriginalName: Enemies
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -12624
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -708,9 +708,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.0619245, y: 29.38556, z: -9.90121}
+    m_Target: {x: -3.6793218, y: 6.78415, z: 2.5628366}
     speed: 2
-    m_Value: {x: 2.0619245, y: 29.38556, z: -9.90121}
+    m_Value: {x: -3.6793218, y: 6.78415, z: 2.5628366}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -757,13 +757,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.020995213, y: 0.9663051, z: -0.24294353, w: 0.083412945}
+    m_Target: {x: 0.003504202, y: 0.99173737, z: -0.12593804, w: 0.027388785}
     speed: 2
-    m_Value: {x: 0.020993477, y: 0.96622515, z: -0.24292342, w: 0.083406046}
+    m_Value: {x: 0.0035039117, y: 0.99165523, z: -0.12592761, w: 0.027386516}
   m_Size:
-    m_Target: 6.2584143
+    m_Target: 6.2120895
     speed: 2
-    m_Value: 6.2584143
+    m_Value: 6.2120895
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -830,22 +830,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /home/pikachu/Desktop/Unity-Game/3D-Game/3D-Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 8a5e0000
-    m_LastClickedID: 24202
-    m_ExpandedIDs: 000000006a5e00006c5e00006e5e000000ca9a3b
+    m_SelectedIDs: f4700000
+    m_LastClickedID: 28916
+    m_ExpandedIDs: 000000006c5e00006e5e0000705e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -873,7 +873,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006a5e00006c5e00006e5e0000
+    m_ExpandedIDs: 000000006c5e00006e5e0000705e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -898,8 +898,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 38aaffff
+    m_LastClickedInstanceID: -21960
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000b26000005c660000
     m_RenameOverlay:
