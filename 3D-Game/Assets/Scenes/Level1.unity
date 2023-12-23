@@ -3916,6 +3916,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1342040136 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1871021558176857023, guid: 3c6be37b137a05d18a5e2916987f3a5b, type: 3}
+  m_PrefabInstance: {fileID: 655872475}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1342152194
 GameObject:
   m_ObjectHideFlags: 0
@@ -4445,7 +4450,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 316418309862817308, guid: 3c6be37b137a05d18a5e2916987f3a5b, type: 3}
   m_PrefabInstance: {fileID: 655872475}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1342040136}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52d8ac957938ff21ba6f01fd10cd8cf1, type: 3}
@@ -6155,6 +6160,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5061370392564695984, guid: 5e50526fb919632b39cba0e9f8885220, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5061370393274938832, guid: 5e50526fb919632b39cba0e9f8885220, type: 3}
       propertyPath: m_Camera
       value: 
@@ -6177,9 +6186,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 1614345174}
     m_Modifications:
     - target: {fileID: 2584603361974446680, guid: f436db8bb0efe007da2698a0bd19d5b8, type: 3}
+      propertyPath: UI
+      value: 
+      objectReference: {fileID: 1999009154}
+    - target: {fileID: 2584603361974446680, guid: f436db8bb0efe007da2698a0bd19d5b8, type: 3}
       propertyPath: vida
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2584603361974446680, guid: f436db8bb0efe007da2698a0bd19d5b8, type: 3}
+      propertyPath: jumpSpeed
+      value: 7.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584603361974446680, guid: f436db8bb0efe007da2698a0bd19d5b8, type: 3}
+      propertyPath: LevelManeger
+      value: 
+      objectReference: {fileID: 1342040136}
     - target: {fileID: 2584603361974446680, guid: f436db8bb0efe007da2698a0bd19d5b8, type: 3}
       propertyPath: rotationSpeed
       value: 100
