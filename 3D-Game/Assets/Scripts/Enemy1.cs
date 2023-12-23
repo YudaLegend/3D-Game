@@ -70,7 +70,7 @@ public class Enemy1 : MonoBehaviour
     /// <param name="other">The other Collider involved in this collision.</param>
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Entered collision with " + other.gameObject.name);
+        //Debug.Log("Entered collision with " + other.gameObject.name);
         if(other.gameObject.tag == "Obstacle"){
             dir = !dir;
         }
@@ -78,6 +78,12 @@ public class Enemy1 : MonoBehaviour
 
     public void BeDamaged(){
         shield = shield - 50;
+        if(shield < 0)
+        {
+
+            health = health + shield;
+            shield = 0;
+        } 
     }
 
     /// <summary>

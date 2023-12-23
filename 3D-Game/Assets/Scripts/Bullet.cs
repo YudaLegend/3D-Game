@@ -28,10 +28,22 @@ public class Bullet : MonoBehaviour
     {
         Debug.Log("Gun Entered collision with " + other.gameObject.tag);
         if(other.gameObject.tag == "Enemy") {
-            Enemy1 e = other.gameObject.GetComponent<Enemy1>();
-            if (e != null)
+            Enemy1 e1 = other.gameObject.GetComponent<Enemy1>();
+            if (e1 != null)
             {
-                e.BeDamaged();
+                e1.BeDamaged();
+                Destroy(gameObject);
+            }else{
+                Enemy2 e2 = other.gameObject.GetComponent<Enemy2>();
+                if (e2 != null)
+                {
+                    e2.BeDamaged();
+                    Destroy(gameObject);
+                }else{
+                    Enemy3 e3 = other.gameObject.GetComponent<Enemy3>();
+                    e3.BeDamaged();
+                    Destroy(gameObject);
+                }
             }
         }
         if(other.gameObject.tag != "bullet") {

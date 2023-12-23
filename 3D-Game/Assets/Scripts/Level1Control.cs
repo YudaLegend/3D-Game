@@ -67,7 +67,7 @@ public class Level1Control : MonoBehaviour
                 opended = true;
                 closed = false;
             }
-            Debug.Log(gameObject.transform.Find("Character").transform.position.y);
+            //Debug.Log(gameObject.transform.Find("Character").transform.position.y);
             if(gameObject.transform.Find("Character").transform.position.y >= 4.5f + (level-2)*3.5f && !closed){
                 CloseDoor(level);
                 closed = true;
@@ -114,7 +114,7 @@ public class Level1Control : MonoBehaviour
             }
             catch (Exception ex)
             {
-                Debug.LogException(ex, this);
+                //Debug.LogException(ex, this);
             }
             try
             {
@@ -123,7 +123,7 @@ public class Level1Control : MonoBehaviour
             }
             catch (Exception ex)
             {
-                Debug.LogException(ex, this);
+                //Debug.LogException(ex, this);
             }
             try
             {
@@ -132,7 +132,7 @@ public class Level1Control : MonoBehaviour
             }
             catch (Exception ex)
             {
-                Debug.LogException(ex, this);
+                //Debug.LogException(ex, this);
             }
         }
     }

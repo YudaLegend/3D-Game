@@ -74,10 +74,6 @@ public class Enemy2 : MonoBehaviour
         if(other.gameObject.tag == "Obstacle"){
             dir = !dir;
         }
-        if (other.gameObject.tag == "bullet")
-        {
-            shield = shield - 50;
-        }
     }
 
     /// <summary>
@@ -121,5 +117,13 @@ public class Enemy2 : MonoBehaviour
 
     public void die(){
         Destroy(gameObject);
+    }
+    public void BeDamaged(){
+        shield = shield - 50;
+        if(shield < 0)
+        {
+            health = health + shield;
+            shield = 0;
+        } 
     }
 }

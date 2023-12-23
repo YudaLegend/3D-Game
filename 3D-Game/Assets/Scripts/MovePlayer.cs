@@ -4,12 +4,17 @@ using UnityEngine;
 public class MovePlayer : MonoBehaviour
 {
     public float rotationSpeed, jumpSpeed, gravity;
+    public GameObject UI;
+    public GameObject LevelManeger;
     Vector3 startDirection;
     public float speedY;
     bool cicle; // false -> outern 
     bool changeButton;
     public bool inmortal;
     bool changeInmortal;
+
+    bool changeLifeMore;
+    bool changeLifeLess;
     // Start is called before the first frame update
     public bool dir;
     public float dashTimer;
@@ -31,9 +36,11 @@ public class MovePlayer : MonoBehaviour
         changeInmortal = false;
         dashTimer = 0;
         changeDash = false;
-        vida = 5;
+        vida = 3;
         dashEnergy = 0.0f;
         bigJump = false;
+        changeLifeMore = false;
+        changeLifeLess = false;
     }
 
     // Update is called once per frame
@@ -41,6 +48,10 @@ public class MovePlayer : MonoBehaviour
     {
         CharacterController charControl = GetComponent<CharacterController>();
         Vector3 position;
+        if(vida <= 0){
+            //Destroy(gameObject);
+            LevelManeger.GetComponent<LevelManeger>().die();
+        }
         // Left-right movement
         if (dashTimer >= 0){
             inmortal = true;
@@ -91,7 +102,7 @@ public class MovePlayer : MonoBehaviour
             if(bigJump && jumpSpeed != 10){
                 jumpSpeed = 15;
             }else if(!bigJump && jumpSpeed != 5){
-                jumpSpeed = 5;
+                jumpSpeed = 7.8f;
             }
             if (speedY < 0.0f)
                 speedY = 0.0f;
@@ -130,6 +141,36 @@ public class MovePlayer : MonoBehaviour
             changeInmortal = false;
             inmortal = !inmortal;
         }
+
+        if (Input.GetKey(KeyCode.I) && !changeLifeMore){
+            changeLifeMore = true;
+        }else if(Input.GetKeyUp(KeyCode.I) && changeLifeMore){
+            changeLifeMore = false;
+            vida = vida - 1;
+            if(vida == 2){
+                UI.transform.Find("life3").gameObject.SetActive(false);
+                
+            }else if(vida == 1){
+                UI.transform.Find("life2").gameObject.SetActive(false);
+                
+            }
+        }
+
+
+        if (Input.GetKey(KeyCode.U) && !changeLifeLess){
+            changeLifeLess = true;
+        }else if(Input.GetKeyUp(KeyCode.U) && changeLifeLess){
+            changeLifeLess = false;
+            vida = vida + 1;
+            if(vida > 3) vida = 3;
+            if(vida == 2){
+                UI.transform.Find("life2").gameObject.SetActive(true);
+                
+            }else if(vida == 3){
+                UI.transform.Find("life3").gameObject.SetActive(true);
+                
+            }
+        }
     }
 
     void OnCollisionEnter(Collision collision)
@@ -144,7 +185,7 @@ public class MovePlayer : MonoBehaviour
     /// <param name="other">The other Collider involved in this collision.</param>
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Entered collision with " + other.gameObject.name);
+        //Debug.Log("Entered collision with " + other.gameObject.name);
         if(other.gameObject.tag == "Jumper")
             bigJump = true;
         if (other.gameObject.tag == "Fireball")
@@ -155,7 +196,7 @@ public class MovePlayer : MonoBehaviour
     }
     void OnTriggerExit(Collider other)
     {
-        Debug.Log("Exited collision with " + other.gameObject.name);
+        //Debug.Log("Exited collision with " + other.gameObject.name);
         if(other.gameObject.tag == "Jumper")
             bigJump = false;
     }
