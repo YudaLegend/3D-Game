@@ -11,27 +11,43 @@ public class ProyectilController : MonoBehaviour
     private float nextFire = 0.5F;
     private GameObject newProjectile;
     private float myTime = 0.0F;
-    
+
+    public int bullets;
+
+
+    void Start() {
+        bullets = 5;
+    }
+
     void Update()
     {
-        myTime = myTime + Time.deltaTime;
-
-        if (Input.GetButton("Fire1") && myTime > nextFire) 
+        if (bullets > 0)
         {
-            GameObject fat = GameObject.Find("Level");
-            GameObject player = GameObject.Find("Character");
+            myTime = myTime + Time.deltaTime;
 
-            nextFire = myTime + fireDelta;
-            var prefab = bulletPrefab;
-            var gridTransform = bulletSpawnPoint.position;
+            if (Input.GetButton("Fire1") && myTime > nextFire)
+            {
+                GameObject fat = GameObject.Find("Level");
+                GameObject player = GameObject.Find("Character");
 
-            newProjectile  = Instantiate(prefab, gridTransform, Quaternion.identity, fat.transform) as GameObject;
+                nextFire = myTime + fireDelta;
+                var prefab = bulletPrefab;
+                var gridTransform = bulletSpawnPoint.position;
+
+                newProjectile = Instantiate(prefab, gridTransform, Quaternion.identity, fat.transform) as GameObject;
 
 
-            nextFire = nextFire - myTime;
-            myTime = 0.0F;
+                nextFire = nextFire - myTime;
+                myTime = 0.0F;
 
-            Destroy(newProjectile, 2f);
+
+                bullets = bullets - 1;
+            }
         }
+    }
+
+
+    public void collectChest() {
+        this.bullets = this.bullets + 5;
     }
 }

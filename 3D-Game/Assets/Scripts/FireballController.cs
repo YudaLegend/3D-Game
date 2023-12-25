@@ -20,8 +20,14 @@ public class FireballController : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
 
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "platform") {
             Destroy(gameObject);
+        }
 
+        if (other.gameObject.tag == "Player") {
+            Destroy(gameObject);
+        }
+            
+        
     }
 }

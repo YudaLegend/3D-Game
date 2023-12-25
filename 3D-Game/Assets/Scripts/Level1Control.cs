@@ -76,7 +76,15 @@ public class Level1Control : MonoBehaviour
             }
         }else if(state == 3){
             //Instanciate(level);
-            if (level == 9) SceneManager.LoadScene(6, LoadSceneMode.Single);
+            //if (level == 9) SceneManager.LoadScene(6, LoadSceneMode.Single);
+            if (level == 9) {
+                GameObject boss = GameObject.Find("ghast");
+                BossController bossScript = boss.GetComponent<BossController>();
+
+                bossScript.unlock();
+
+            }
+            
             state = 1;
         }
     }

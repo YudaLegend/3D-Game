@@ -12,26 +12,42 @@ public class PistolController : MonoBehaviour
     private GameObject newProjectile;
     private float myTime = 0.0F;
 
+    public int bullets;
+
+    void Start() {
+        bullets = 15;
+    }
+
+
     void Update()
     {
-        myTime = myTime + Time.deltaTime;
-
-        if (Input.GetMouseButtonDown(1) && myTime > nextFire)
+        if (bullets > 0)
         {
-            GameObject fat = GameObject.Find("Level");
-            GameObject player = GameObject.Find("Character");
+            myTime = myTime + Time.deltaTime;
 
-            nextFire = myTime + fireDelta;
-            var prefab = bulletPrefab;
-            var gridTransform = bulletSpawnPoint.position;
+            if (Input.GetMouseButtonDown(1) && myTime > nextFire)
+            {
+                GameObject fat = GameObject.Find("Level");
+                GameObject player = GameObject.Find("Character");
 
-            newProjectile = Instantiate(prefab, gridTransform, Quaternion.identity, fat.transform) as GameObject;
+                nextFire = myTime + fireDelta;
+                var prefab = bulletPrefab;
+                var gridTransform = bulletSpawnPoint.position;
+
+                newProjectile = Instantiate(prefab, gridTransform, Quaternion.identity, fat.transform) as GameObject;
 
 
-            nextFire = nextFire - myTime;
-            myTime = 0.0F;
+                nextFire = nextFire - myTime;
+                myTime = 0.0F;
 
-            Destroy(newProjectile, 4f);
+                bullets = bullets - 1;
+
+                Destroy(newProjectile, 4f);
+            }
         }
+    }
+
+    public void collectChest() {
+        this.bullets = bullets + 5;
     }
 }

@@ -51,9 +51,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6071433184430221682, guid: 54675447b037be249b4134958781d89f, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -2432090755550338912, guid: c89c119b36c2db44aa84fbb797eb5c2c, type: 3}
+    - target: {fileID: 6071433184430221682, guid: 54675447b037be249b4134958781d89f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6378075095993570351, guid: 54675447b037be249b4134958781d89f, type: 3}
       propertyPath: m_Name
-      value: fireball (1)
+      value: fireball (1) Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158001191771498547, guid: 54675447b037be249b4134958781d89f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54675447b037be249b4134958781d89f, type: 3}

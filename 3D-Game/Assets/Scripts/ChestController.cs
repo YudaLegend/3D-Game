@@ -5,8 +5,13 @@ using UnityEngine;
 public class ChestController : MonoBehaviour
 {
     public GameObject player; // referencia al objeto del jugador
-    public float activationDistance = 5.0f; // distancia a la que se activará la animación
+    public float activationDistance = 5.0f; // distancia a la que se activarï¿½ la animaciï¿½n
     private Animator animator;
+
+    public GameObject proyectil;
+    public GameObject pistol;
+
+    private bool once = false;
 
     void Start()
     {
@@ -19,6 +24,18 @@ public class ChestController : MonoBehaviour
         bool isPlayerNear = distanceToPlayer <= activationDistance;
         
         animator.SetBool("PlayerNearly", isPlayerNear);
+
+        if (isPlayerNear && (!once)) {
+            once = true;
+        
+            ProyectilController pscript = proyectil.GetComponent<ProyectilController>();
+            PistolController pistolScript = pistol.GetComponent<PistolController>();
+            pscript.collectChest();
+            pistolScript.collectChest();
+
+            Debug.Log("aaaaaaaaaaaaaaa");
+        }
+
 
 
     }
