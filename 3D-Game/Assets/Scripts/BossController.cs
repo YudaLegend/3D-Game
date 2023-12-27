@@ -28,12 +28,12 @@ public class BossController : MonoBehaviour
 
     private GameObject[] enemies; 
 
-    private static Vector3[] fireballSpawn = new Vector3[] { new Vector3(2.8f, 3, 0), new Vector3(-2.8f, 3, 0) , new Vector3(2.5f, 3, 1f), new Vector3(0, 3, -3f), new Vector3(-1.3f, 3, -3f),
+    private static Vector3[] fireballSpawn = new Vector3[] { new Vector3(3f, 3, 0), new Vector3(-3f, 3, 0) , new Vector3(2.5f, 3, 1f), new Vector3(0, 3, -3f), new Vector3(-1.3f, 3, -3f),
     new Vector3(0, 3, 3f),new Vector3(-2f, 3, 2.4f)};
 
 
-    private static Vector3[] enemySpawn = new Vector3[] { new Vector3(3f, 0, 0), new Vector3(-3f, 0, 0) , new Vector3(2f, 0, 1f), new Vector3(0, 0, -2.8f), new Vector3(-1f, 0, -3f),
-    new Vector3(0, 0, 3f),new Vector3(-2f, 0, 2f)};
+    private static Vector3[] enemySpawn = new Vector3[] { new Vector3(3f, -0.1f, 0), new Vector3(-3f, -0.1f, 0) , new Vector3(2f, -0.1f, 1f), new Vector3(0, -0.1f, -2.8f), new Vector3(-1f, -0.1f, -3f),
+    new Vector3(0, -0.1f, 3f),new Vector3(-2.5f, -0.1f, 2.5f)};
 
     private int childEnemy;
 
@@ -102,10 +102,13 @@ public class BossController : MonoBehaviour
 
             for (int i = 0; i < actualEnemy; i++)
             {
+                
                 if (enemies[i] == null)
                 {
+                    enemies[i] = new GameObject();
                     health = health - 2f;
                 }
+
             }
         }
 
