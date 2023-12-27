@@ -10,6 +10,7 @@ public class Bullet : MonoBehaviour
     public bool dir;
     CharacterController charControl;
     Vector3 direction, position;
+    float timer;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,7 @@ public class Bullet : MonoBehaviour
 
         position = transform.position;
         direction = position - transform.parent.position;
+        timer = 2.0f;
     }
     void OnTriggerEnter(Collider other)
     {
@@ -54,6 +56,10 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(timer < 0) Destroy(gameObject);
+        else{
+            timer-=Time.deltaTime;
+        }
         CharacterController charControl = GetComponent<CharacterController>();
 
         Moving();

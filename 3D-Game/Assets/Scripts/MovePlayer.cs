@@ -11,6 +11,7 @@ public class MovePlayer : MonoBehaviour
     bool cicle; // false -> outern 
     bool changeButton;
     public bool inmortal;
+    public float inmortalTimer;
     bool changeInmortal;
 
     bool changeLifeMore;
@@ -34,6 +35,7 @@ public class MovePlayer : MonoBehaviour
         changeButton = false;
         inmortal = false;
         changeInmortal = false;
+        inmortalTimer = 0.0f;
         dashTimer = 0;
         changeDash = false;
         vida = 3;
@@ -146,14 +148,7 @@ public class MovePlayer : MonoBehaviour
             changeLifeMore = true;
         }else if(Input.GetKeyUp(KeyCode.I) && changeLifeMore){
             changeLifeMore = false;
-            vida = vida - 1;
-            if(vida == 2){
-                UI.transform.Find("life3").gameObject.SetActive(false);
-                
-            }else if(vida == 1){
-                UI.transform.Find("life2").gameObject.SetActive(false);
-                
-            }
+            VidaPlusOne();
         }
 
 
@@ -161,15 +156,7 @@ public class MovePlayer : MonoBehaviour
             changeLifeLess = true;
         }else if(Input.GetKeyUp(KeyCode.U) && changeLifeLess){
             changeLifeLess = false;
-            vida = vida + 1;
-            if(vida > 3) vida = 3;
-            if(vida == 2){
-                UI.transform.Find("life2").gameObject.SetActive(true);
-                
-            }else if(vida == 3){
-                UI.transform.Find("life3").gameObject.SetActive(true);
-                
-            }
+            VidaMinusOne();
         }
     }
 
@@ -188,10 +175,15 @@ public class MovePlayer : MonoBehaviour
         //Debug.Log("Entered collision with " + other.gameObject.name);
         if(other.gameObject.tag == "Jumper")
             bigJump = true;
-        if (other.gameObject.tag == "Fireball")
-            vida = vida - 1;
-        if (other.gameObject.tag == "trap")
-            vida = vida - 1;
+        else if (other.gameObject.tag == "Fireball"){
+            VidaMinusOne();
+        }
+        if (other.gameObject.tag == "trap"){
+            VidaMinusOne();
+        }
+        if (other.gameObject.tag == "Enemy"){
+            VidaMinusOne();
+        }
 
     }
     void OnTriggerExit(Collider other)
@@ -263,6 +255,27 @@ public class MovePlayer : MonoBehaviour
             dir = true;
         }
 
+    }
+
+    void VidaMinusOne(){
+        vida = vida - 1;
+        if(vida == 2){
+            UI.transform.Find("lives").Find("life3").gameObject.SetActive(false);
+            
+        }else if(vida == 1){
+            UI.transform.Find("lives").Find("life2").gameObject.SetActive(false);
+            
+        }
+    }
+
+    void VidaPlusOne(){
+        vida = vida + 1;
+        if(vida > 3) vida = 3;
+        if(vida == 2){
+            UI.transform.Find("lives").Find("life2").gameObject.SetActive(true);
+        }else if(vida == 3){
+            UI.transform.Find("lives").Find("life3").gameObject.SetActive(true);
+        }
     }
 }
 
