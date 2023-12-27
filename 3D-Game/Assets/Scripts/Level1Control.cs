@@ -80,9 +80,7 @@ public class Level1Control : MonoBehaviour
             if (level == 9) {
                 GameObject boss = GameObject.Find("ghast");
                 BossController bossScript = boss.GetComponent<BossController>();
-
                 bossScript.unlock();
-
             }
             
             state = 1;

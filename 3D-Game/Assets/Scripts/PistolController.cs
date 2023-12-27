@@ -5,6 +5,7 @@ public class PistolController : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform bulletSpawnPoint;
 
+    public GameObject UI;
 
     public float fireDelta = 0.5F;
 
@@ -15,7 +16,7 @@ public class PistolController : MonoBehaviour
     public int bullets;
 
     void Start() {
-        bullets = 15;
+        bullets = 10;
     }
 
 
@@ -43,11 +44,34 @@ public class PistolController : MonoBehaviour
                 bullets = bullets - 1;
 
                 Destroy(newProjectile, 4f);
+                changeUIBUllet(-1);
             }
+        }
+        if(Input.GetKeyDown(KeyCode.M)){
+            collectChest();
         }
     }
 
     public void collectChest() {
         this.bullets = bullets + 5;
+        if(this.bullets > 13){
+            changeUIBUllet(5 - (this.bullets - 13));
+            this.bullets = 13;
+            
+        }else{
+            changeUIBUllet(5);
+        }
+    }
+
+    void changeUIBUllet(int i){
+        if(i < 0){
+            if(i == -1){
+                UI.transform.Find("Bullets").Find("bullet1 (" + (bullets+14) + ")").gameObject.SetActive(false);
+            }
+        }else if(i > 0){
+            for(int j = 0; j < i; j++){
+                UI.transform.Find("Bullets").Find("bullet1 (" + (bullets + j + 9 ) + ")").gameObject.SetActive(true);
+            }
+        }
     }
 }

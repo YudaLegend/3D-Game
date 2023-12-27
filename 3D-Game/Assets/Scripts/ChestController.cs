@@ -33,7 +33,7 @@ public class ChestController : MonoBehaviour
             pscript.collectChest();
             pistolScript.collectChest();
 
-            Debug.Log("aaaaaaaaaaaaaaa");
+            //Debug.Log("aaaaaaaaaaaaaaa");
         }
 
 

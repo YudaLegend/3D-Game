@@ -12,6 +12,8 @@ public class MovePlayer : MonoBehaviour
     bool changeButton;
     public bool inmortal;
     public float inmortalTimer;
+
+    public bool godMode;
     bool changeInmortal;
 
     bool changeLifeMore;
@@ -23,6 +25,7 @@ public class MovePlayer : MonoBehaviour
     public int vida;
     public float dashEnergy;
     public bool bigJump;
+    public bool enter;
     void Start()
     {
         // Store starting direction of the player with respect to the axis of the level
@@ -43,6 +46,8 @@ public class MovePlayer : MonoBehaviour
         bigJump = false;
         changeLifeMore = false;
         changeLifeLess = false;
+        godMode = false;
+        enter = false;
     }
 
     // Update is called once per frame
@@ -68,9 +73,18 @@ public class MovePlayer : MonoBehaviour
         }
         else if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && dashTimer < 0)
         {
-            inmortal = false;
             Moving();
+        }else if (dashTimer < 0 && inmortal){
+            inmortal = false;
         }
+
+        if(inmortalTimer > 0.0f){
+            inmortalTimer -= Time.deltaTime;
+            if(!inmortal) inmortal = true;
+        }else if (inmortal){
+            inmortal = false;
+        }
+
 
         // Correct orientation of player
         // Compute current direction
@@ -113,29 +127,33 @@ public class MovePlayer : MonoBehaviour
         }
         else
             speedY -= gravity * Time.deltaTime;
-
-        if (Input.GetKey(KeyCode.Q) && !changeButton){
-            changeButton = true;
-            cicle = !cicle;
-            float angle = Mathf.Atan2(transform.position.x, transform.position.z);
-            if(cicle){
-                //intern
-                Vector3 pos = transform.position;
-                pos.x = (float)1.84*Mathf.Sin(angle);
-                pos.z = (float)1.84*Mathf.Cos(angle);
-                pos.y = (float)(pos.y + 0.38);
-                transform.position = pos;
-            }else {
-                //outern
-                Vector3 pos = transform.position;
-                pos.x = (float)2.91*Mathf.Sin(angle);
-                pos.z = (float)2.91*Mathf.Cos(angle);
-                pos.y = (float)(pos.y - 0.37);
-                transform.position = pos;
+        
+        if (enter){
+            if (Input.GetKey(KeyCode.Q) && !changeButton){
+                changeButton = true;
+                cicle = !cicle;
+                float angle = Mathf.Atan2(transform.position.x, transform.position.z);
+                if(cicle){
+                    //intern
+                    Vector3 pos = transform.position;
+                    pos.x = (float)1.84*Mathf.Sin(angle);
+                    pos.z = (float)1.84*Mathf.Cos(angle);
+                    pos.y = (float)(pos.y + 0.38);
+                    transform.position = pos;
+                }else {
+                    //outern
+                    Vector3 pos = transform.position;
+                    pos.x = (float)2.91*Mathf.Sin(angle);
+                    pos.z = (float)2.91*Mathf.Cos(angle);
+                    pos.y = (float)(pos.y - 0.37);
+                    transform.position = pos;
+                }
+            }else if(Input.GetKeyUp(KeyCode.Q) && changeButton){
+                changeButton = false;
             }
-        }else if(Input.GetKeyUp(KeyCode.Q) && changeButton){
-            changeButton = false;
+
         }
+
 
         if (Input.GetKey(KeyCode.R) && !changeInmortal){
             changeInmortal = true;
@@ -158,6 +176,12 @@ public class MovePlayer : MonoBehaviour
             changeLifeLess = false;
             VidaMinusOne();
         }
+
+        
+
+        if (Input.GetKeyDown(KeyCode.G)){
+            godMode = !godMode;
+        }
     }
 
     void OnCollisionEnter(Collision collision)
@@ -175,14 +199,19 @@ public class MovePlayer : MonoBehaviour
         //Debug.Log("Entered collision with " + other.gameObject.name);
         if(other.gameObject.tag == "Jumper")
             bigJump = true;
-        else if (other.gameObject.tag == "Fireball"){
+        else if (other.gameObject.tag == "Fireball" && !godMode && !inmortal){
             VidaMinusOne();
         }
-        if (other.gameObject.tag == "trap"){
+        else if (other.gameObject.tag == "trap" && !godMode && !inmortal){
             VidaMinusOne();
         }
-        if (other.gameObject.tag == "Enemy"){
+        else if (other.gameObject.tag == "Enemy" && !godMode && !inmortal){
             VidaMinusOne();
+        }
+        else if (other.gameObject.tag == "Sheild" && !godMode && !inmortal){
+            VidaMinusOne();
+        }else if (other.gameObject.tag == "Enter"){
+            enter = true;
         }
 
     }
@@ -191,6 +220,9 @@ public class MovePlayer : MonoBehaviour
         //Debug.Log("Exited collision with " + other.gameObject.name);
         if(other.gameObject.tag == "Jumper")
             bigJump = false;
+        else if(other.gameObject.tag == "Enter"){
+            enter = false;
+        }
     }
 
     void Moving(){
@@ -258,10 +290,11 @@ public class MovePlayer : MonoBehaviour
     }
 
     void VidaMinusOne(){
+        inmortalTimer = 100.0f;
+        inmortal = true;
         vida = vida - 1;
         if(vida == 2){
             UI.transform.Find("lives").Find("life3").gameObject.SetActive(false);
-            
         }else if(vida == 1){
             UI.transform.Find("lives").Find("life2").gameObject.SetActive(false);
             
