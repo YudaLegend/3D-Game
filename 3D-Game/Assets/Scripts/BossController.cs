@@ -11,7 +11,7 @@ public class BossController : MonoBehaviour
     public GameObject enemy3;
 
 
-    public float health;
+    public int health;
 
     public static int numberEnemy;
 
@@ -32,8 +32,7 @@ public class BossController : MonoBehaviour
     new Vector3(0, 3, 3f),new Vector3(-2f, 3, 2.4f)};
 
 
-    private static Vector3[] enemySpawn = new Vector3[] { new Vector3(3f, -0.1f, 0), new Vector3(-3f, -0.1f, 0) , new Vector3(2f, -0.1f, 1f), new Vector3(0, -0.1f, -2.8f), new Vector3(-1f, -0.1f, -3f),
-    new Vector3(0, -0.1f, 3f),new Vector3(-2.5f, -0.1f, 2.5f)};
+    private static Vector3[] enemySpawn = new Vector3[] { new Vector3(2.65f, -0.2f, 0), new Vector3(-3f, -0.2f, 0)};
 
     private int childEnemy;
 
@@ -106,7 +105,7 @@ public class BossController : MonoBehaviour
                 if (enemies[i] == null)
                 {
                     enemies[i] = new GameObject();
-                    health = health - 2f;
+                    health = health - 2;
                 }
 
             }

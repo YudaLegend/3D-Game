@@ -16,7 +16,7 @@ public class ProyectilController : MonoBehaviour
 
 
     void Start() {
-        bullets = 5;
+        bullets = 20;
     }
 
     void Update()

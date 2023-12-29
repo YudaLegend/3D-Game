@@ -77,15 +77,22 @@ public class Level1Control : MonoBehaviour
         }else if(state == 3){
             //Instanciate(level);
             //if (level == 9) SceneManager.LoadScene(6, LoadSceneMode.Single);
-            if (level == 9) {
-                GameObject boss = GameObject.Find("ghast");
-                BossController bossScript = boss.GetComponent<BossController>();
-                bossScript.unlock();
-            }
             
             state = 1;
         }
+
+        if (level == 9) {
+            GameObject boss = GameObject.Find("ghast");
+            BossController bossScript = boss.GetComponent<BossController>();
+            bossScript.unlock();
+            if (bossScript.health == 0) {
+                SceneManager.LoadScene(6, LoadSceneMode.Single);
+            }
+
+        }
+        
     }
+
     void OpenDoor(int l){
         level++;
         gameObject.transform.Find("Tower").Find("Plataform" + level).Find("Plataform Outern").Find("JumpPlataform").GetComponent<Plataform>().open();

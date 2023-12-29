@@ -74,6 +74,7 @@ public class Enemy1 : MonoBehaviour
         if(other.gameObject.tag == "Obstacle"){
             dir = !dir;
         }
+        
     }
 
     public void BeDamaged(){
@@ -83,7 +84,8 @@ public class Enemy1 : MonoBehaviour
 
             health = health + shield;
             shield = 0;
-        } 
+        }
+         
     }
 
     /// <summary>
