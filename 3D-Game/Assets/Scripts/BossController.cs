@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class BossController : MonoBehaviour
 {
     public GameObject FireballPrefab;
@@ -9,9 +9,13 @@ public class BossController : MonoBehaviour
     public GameObject enemy1;
     public GameObject enemy2;
     public GameObject enemy3;
+    public Camera camera;
 
+    public float health;
+    public float maxHealth;
+    public Slider h;
 
-    public int health;
+    public GameObject healthBarUI;
 
     public static int numberEnemy;
 
@@ -42,7 +46,8 @@ public class BossController : MonoBehaviour
     void Start()
     {
         numberEnemy = 5;
-        health = 10;
+        maxHealth = 10;
+        health = maxHealth;
         childEnemy = this.transform.childCount;
 
         enemies = new GameObject[numberEnemy];
@@ -51,6 +56,7 @@ public class BossController : MonoBehaviour
         {
             enemies[i] = null;
         }
+        h.value = health/maxHealth;
     }
 
     // Update is called once per frame
@@ -93,7 +99,8 @@ public class BossController : MonoBehaviour
 
 
                 enemy = Instantiate(enemy, this.transform.position + pos, Quaternion.identity, this.transform) as GameObject;
-
+                enemy.transform.Find("Health").GetComponent<FollowCamera>().ca = camera;
+                Debug.Log(enemy.transform.Find("Health").GetComponent<FollowCamera>().ca);
                 enemies[actualEnemy] = enemy;
 
                 actualEnemy = actualEnemy + 1;
@@ -106,6 +113,7 @@ public class BossController : MonoBehaviour
                 {
                     enemies[i] = new GameObject();
                     health = health - 2;
+                    h.value = health/maxHealth;
                 }
 
             }

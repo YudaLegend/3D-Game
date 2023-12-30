@@ -68,6 +68,7 @@
     <Compile Include="Assets/Scripts/BossController.cs" />
     <Compile Include="Assets/2Dmages/HealthHeartSystem/Scripts/PlayerStats.cs" />
     <Compile Include="Assets/Scripts/Level1Control.cs" />
+    <Compile Include="Assets/Scripts/ChangeDirection.cs" />
     <Compile Include="Assets/Scripts/Plataform.cs" />
     <Compile Include="Assets/Scripts/FireballController.cs" />
     <Compile Include="Assets/Scripts/ProyectilController.cs" />

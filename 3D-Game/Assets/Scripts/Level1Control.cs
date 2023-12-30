@@ -48,18 +48,21 @@ public class Level1Control : MonoBehaviour
             if(Input.GetKey(KeyCode.F)){
                 killAll();
             }
-            foreach (Transform child in gameObject.transform.Find("Tower").Find("Plataform" + level).Find("Enemies").gameObject.transform)
-            {
-                if (child.tag == "Enemy"){
-                    //Debug.Log(child.tag);
-                    counter++;
-                }  
+            if(level != 9){
+                foreach (Transform child in gameObject.transform.Find("Tower").Find("Plataform" + level).Find("Enemies").gameObject.transform)
+                {
+                    if (child.tag == "Enemy"){
+                        //Debug.Log(child.tag);
+                        counter++;
+                    }  
+                }
+                if(counter <= 0) 
+                {
+                    gameObject.transform.Find("Tower").Find("Plataform" + level).Find("BigJump").gameObject.SetActive(true);
+                    state = 2;
+                }
             }
-            if(counter <= 0) 
-            {
-                gameObject.transform.Find("Tower").Find("Plataform" + level).Find("BigJump").gameObject.SetActive(true);
-                state = 2;
-            }
+
         }else if(state == 2){
 
             if(!opended){
