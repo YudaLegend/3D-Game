@@ -6,6 +6,8 @@ public class ChestController : MonoBehaviour
 {
     public GameObject player; // referencia al objeto del jugador
     public float activationDistance = 5.0f; // distancia a la que se activar� la animaci�n
+
+    public AudioSource chestOpening;
     private Animator animator;
 
     public GameObject proyectil;
@@ -27,12 +29,14 @@ public class ChestController : MonoBehaviour
 
         if (isPlayerNear && (!once)) {
             once = true;
-        
+            
             ProyectilController pscript = proyectil.GetComponent<ProyectilController>();
             PistolController pistolScript = pistol.GetComponent<PistolController>();
             pscript.collectChest();
             pistolScript.collectChest();
 
+            chestOpening.PlayDelayed(0.5f);
+            
             //Debug.Log("aaaaaaaaaaaaaaa");
         }
 

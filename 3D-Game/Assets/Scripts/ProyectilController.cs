@@ -5,6 +5,8 @@ public class ProyectilController : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform bulletSpawnPoint;
     public GameObject UI;
+
+    public AudioSource bang;
     
     public float fireDelta = 0.5F;
 
@@ -27,6 +29,7 @@ public class ProyectilController : MonoBehaviour
 
             if (Input.GetButton("Fire1") && myTime > nextFire)
             {
+                bang.Play();
                 GameObject fat = GameObject.Find("Level");
                 GameObject player = GameObject.Find("Character");
 

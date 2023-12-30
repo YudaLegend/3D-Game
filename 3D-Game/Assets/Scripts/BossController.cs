@@ -10,10 +10,11 @@ public class BossController : MonoBehaviour
     public GameObject enemy2;
     public GameObject enemy3;
     public Camera camera;
-
     public float health;
     public float maxHealth;
     public Slider h;
+    public AudioSource fireBallEffects;
+    public AudioSource monsterEffects;
 
     public GameObject healthBarUI;
 
@@ -71,6 +72,7 @@ public class BossController : MonoBehaviour
             {
                 Vector3 pos = fireballSpawn[Random.Range(0, fireballSpawn.Length)];
                 myTime = 0.0F;
+                fireBallEffects.Play();
                 newFireball = Instantiate(FireballPrefab, this.transform.position + pos, Quaternion.identity, this.transform) as GameObject;
 
             }
@@ -97,6 +99,7 @@ public class BossController : MonoBehaviour
 
                 Vector3 pos = enemySpawn[Random.Range(0, enemySpawn.Length)];
 
+                monsterEffects.Play();
 
                 enemy = Instantiate(enemy, this.transform.position + pos, Quaternion.identity, this.transform) as GameObject;
                 enemy.transform.Find("Health").GetComponent<FollowCamera>().ca = camera;
