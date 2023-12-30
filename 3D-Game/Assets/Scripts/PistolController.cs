@@ -7,11 +7,14 @@ public class PistolController : MonoBehaviour
 
     public GameObject UI;
 
+    public AudioSource bang;
+
     public float fireDelta = 0.5F;
 
     private float nextFire = 0.5F;
     private GameObject newProjectile;
     private float myTime = 0.0F;
+
 
     public int bullets;
 
@@ -28,6 +31,7 @@ public class PistolController : MonoBehaviour
 
             if (Input.GetMouseButtonDown(1) && myTime > nextFire)
             {
+                bang.Play();
                 GameObject fat = GameObject.Find("Level");
                 GameObject player = GameObject.Find("Character");
 
