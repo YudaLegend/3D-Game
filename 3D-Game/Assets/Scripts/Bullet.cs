@@ -11,6 +11,7 @@ public class Bullet : MonoBehaviour
     CharacterController charControl;
     Vector3 direction, position;
     float timer;
+    public AudioSource hit;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,21 +35,25 @@ public class Bullet : MonoBehaviour
             if (e1 != null)
             {
                 e1.BeDamaged();
+                hit.Play();
                 Destroy(gameObject);
             }else{
                 Enemy2 e2 = other.gameObject.GetComponent<Enemy2>();
                 if (e2 != null)
                 {
                     e2.BeDamaged();
+                    hit.Play();
                     Destroy(gameObject);
                 }else{
                     Enemy3 e3 = other.gameObject.GetComponent<Enemy3>();
                     e3.BeDamaged();
+                    hit.Play();
                     Destroy(gameObject);
                 }
             }
         }
         if(other.gameObject.tag != "bullet") {
+            hit.Play();
             Destroy(gameObject);
         }
         

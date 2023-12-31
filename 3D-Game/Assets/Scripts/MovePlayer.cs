@@ -26,6 +26,11 @@ public class MovePlayer : MonoBehaviour
     public float dashEnergy;
     public bool bigJump;
     public bool enter;
+
+    public AudioSource jump;
+    public AudioSource dash;
+    public AudioSource damaged;
+    public AudioSource teletransport;
     void Start()
     {
         // Store starting direction of the player with respect to the axis of the level
@@ -67,6 +72,7 @@ public class MovePlayer : MonoBehaviour
         else if (Input.GetKey(KeyCode.E) && !changeDash){
             dashTimer = 0.1f;
             changeDash = true;
+            dash.Play();
         }
         else if (Input.GetKeyUp(KeyCode.E) && changeDash){
             changeDash = false;
@@ -122,8 +128,12 @@ public class MovePlayer : MonoBehaviour
             }
             if (speedY < 0.0f)
                 speedY = 0.0f;
-            if (Input.GetKey(KeyCode.W))
+            if (Input.GetKey(KeyCode.W)) {
                 speedY = jumpSpeed;
+                jump.Play();
+            }
+                
+                
         }
         else
             speedY -= gravity * Time.deltaTime;
@@ -148,6 +158,7 @@ public class MovePlayer : MonoBehaviour
                     pos.y = (float)(pos.y - 0.37);
                     transform.position = pos;
                 }
+                teletransport.Play();
             }else if(Input.GetKeyUp(KeyCode.Q) && changeButton){
                 changeButton = false;
             }
@@ -201,15 +212,19 @@ public class MovePlayer : MonoBehaviour
             bigJump = true;
         else if (other.gameObject.tag == "Fireball" && !godMode && !inmortal){
             VidaMinusOne();
+            damaged.Play();
         }
         else if (other.gameObject.tag == "trap" && !godMode && !inmortal){
             VidaMinusOne();
+            damaged.Play();
         }
         else if (other.gameObject.tag == "Enemy" && !godMode && !inmortal){
             VidaMinusOne();
+            damaged.Play();
         }
         else if (other.gameObject.tag == "Sheild" && !godMode && !inmortal){
             VidaMinusOne();
+            damaged.Play();
         }else if (other.gameObject.tag == "Enter"){
             enter = true;
         }

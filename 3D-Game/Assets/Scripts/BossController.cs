@@ -18,6 +18,8 @@ public class BossController : MonoBehaviour
 
     public GameObject healthBarUI;
 
+    public Transform player;
+
     public static int numberEnemy;
 
     private float myTime = 0.0f;
@@ -43,6 +45,8 @@ public class BossController : MonoBehaviour
 
     public bool locked = true;
 
+    private Transform start;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +55,7 @@ public class BossController : MonoBehaviour
         health = maxHealth;
         childEnemy = this.transform.childCount;
 
+        
         enemies = new GameObject[numberEnemy];
 
         for (int i = 0; i < enemies.Length; i++)
@@ -65,6 +70,7 @@ public class BossController : MonoBehaviour
     {
         if (!locked)
         {
+
             //newFireball = Instantiate(FireballPrefab, bulletSpawnPoint.position, Quaternion.identity) as GameObject;
             myTime += Time.deltaTime;
             TimeEnemy += Time.deltaTime;

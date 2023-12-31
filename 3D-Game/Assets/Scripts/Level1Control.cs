@@ -14,6 +14,9 @@ public class Level1Control : MonoBehaviour
     int counter;
     bool opended;
     bool closed;
+
+    public AudioSource win;
+    public AudioSource bgm;
     void Start()
     {
         level = 1;
@@ -38,6 +41,7 @@ public class Level1Control : MonoBehaviour
         gb.SetActive(false);
         gb = gameObject.transform.Find("Tower").Find("Plataform8").Find("BigJump").gameObject;
         gb.SetActive(false);
+        bgm.Play();
     }
 
     // Update is called once per frame
@@ -90,6 +94,7 @@ public class Level1Control : MonoBehaviour
             bossScript.unlock();
             if (bossScript.health == 0) {
                 SceneManager.LoadScene(6, LoadSceneMode.Single);
+                win.Play();
             }
 
         }

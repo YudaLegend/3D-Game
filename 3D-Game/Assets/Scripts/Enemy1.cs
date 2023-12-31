@@ -16,6 +16,8 @@ public class Enemy1 : MonoBehaviour
     Vector3 startDirection;
     // Start is called before the first frame update
     public bool dir;
+
+    public AudioSource dead;
     void Start()
     {
         // Store starting direction of the player with respect to the axis of the level
@@ -35,6 +37,7 @@ public class Enemy1 : MonoBehaviour
         s.value = shield/maxSheild;
         h.value = health/maxHealth;
         if(health <= 0){
+            dead.Play();
             Destroy(gameObject);
         }
         if(health > maxHealth){
@@ -128,6 +131,7 @@ public class Enemy1 : MonoBehaviour
     }
 
     public void die(){
+        
         Destroy(gameObject);
     }
 }
