@@ -31,6 +31,7 @@ public class MovePlayer : MonoBehaviour
     public AudioSource dash;
     public AudioSource damaged;
     public AudioSource teletransport;
+    public AudioSource BigJump;
     void Start()
     {
         // Store starting direction of the player with respect to the axis of the level
