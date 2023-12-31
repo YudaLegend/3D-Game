@@ -27,6 +27,8 @@ public class MovePlayer : MonoBehaviour
     public bool bigJump;
     public bool enter;
 
+    public GameObject foot;
+
     public AudioSource jump;
     public AudioSource dash;
     public AudioSource damaged;
@@ -133,11 +135,18 @@ public class MovePlayer : MonoBehaviour
                 speedY = jumpSpeed;
                 jump.Play();
             }
-                
-                
+            
         }
-        else
+        else{
+
             speedY -= gravity * Time.deltaTime;
+        }
+        
+        if(speedY >= -0.5){
+            if(foot.activeSelf) foot.SetActive(false);
+        }else{
+            if(!foot.activeSelf) foot.SetActive(true);
+        }
         
         if (enter){
             if (Input.GetKey(KeyCode.Q) && !changeButton){
@@ -306,7 +315,7 @@ public class MovePlayer : MonoBehaviour
     }
 
     void VidaMinusOne(){
-        inmortalTimer = 100.0f;
+        inmortalTimer = 5.0f;
         inmortal = true;
         vida = vida - 1;
         if(vida == 2){
@@ -325,6 +334,11 @@ public class MovePlayer : MonoBehaviour
         }else if(vida == 3){
             UI.transform.Find("lives").Find("life3").gameObject.SetActive(true);
         }
+    }
+
+    public void smallJump(){
+        speedY = 5;
+        jump.Play();
     }
 }
 

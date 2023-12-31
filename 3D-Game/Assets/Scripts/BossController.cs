@@ -9,7 +9,7 @@ public class BossController : MonoBehaviour
     public GameObject enemy1;
     public GameObject enemy2;
     public GameObject enemy3;
-    public Camera camera;
+    public Camera Ca;
     public float health;
     public float maxHealth;
     public Slider h;
@@ -108,7 +108,7 @@ public class BossController : MonoBehaviour
                 monsterEffects.Play();
 
                 enemy = Instantiate(enemy, this.transform.position + pos, Quaternion.identity, this.transform) as GameObject;
-                enemy.transform.Find("Health").GetComponent<FollowCamera>().ca = camera;
+                enemy.transform.Find("Health").GetComponent<FollowCamera>().ca = Ca;
                 Debug.Log(enemy.transform.Find("Health").GetComponent<FollowCamera>().ca);
                 enemies[actualEnemy] = enemy;
 

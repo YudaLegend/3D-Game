@@ -28,6 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3395488452636419089}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.33, y: 4.261, z: -1.78}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
@@ -35,7 +36,6 @@ Transform:
   m_Children:
   - {fileID: 3180902944072060915}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &2584603361974446687
 CharacterController:
@@ -45,9 +45,17 @@ CharacterController:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3395488452636419089}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Height: 1.52
   m_Radius: 0.5
   m_SlopeLimit: 45
@@ -63,10 +71,18 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3395488452636419089}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
+  serializedVersion: 5
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2432090755550338912, guid: 0b5bfff802ee829cbba14de2dd634463, type: 3}
 --- !u!33 &2584603361974446685
@@ -134,6 +150,23 @@ MonoBehaviour:
   rotationSpeed: 100
   jumpSpeed: 5
   gravity: 25
+  UI: {fileID: 0}
+  LevelManeger: {fileID: 0}
+  speedY: 0
+  inmortal: 0
+  inmortalTimer: 0
+  godMode: 0
+  dir: 0
+  dashTimer: 0
+  vida: 0
+  dashEnergy: 0
+  bigJump: 0
+  enter: 0
+  jump: {fileID: 0}
+  dash: {fileID: 0}
+  damaged: {fileID: 0}
+  teletransport: {fileID: 0}
+  BigJump: {fileID: 0}
 --- !u!1 &5950091980988406984
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,13 +192,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5950091980988406984}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2617966242948316843}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &356902589008901817
 MeshFilter:
