@@ -5110,9 +5110,6 @@ PrefabInstance:
       addedObject: {fileID: 128107330}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c89c119b36c2db44aa84fbb797eb5c2c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 128107332}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c89c119b36c2db44aa84fbb797eb5c2c, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 128107333}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c89c119b36c2db44aa84fbb797eb5c2c, type: 3}
       insertIndex: -1
@@ -5160,28 +5157,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0.3, y: 1, z: -0.2}
---- !u!64 &128107332
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7742814866411024305}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: c89c119b36c2db44aa84fbb797eb5c2c, type: 3}
 --- !u!33 &128107333
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5247,6 +5222,7 @@ MonoBehaviour:
   rotationSpeed: 200
   jumpSpeed: 5
   gravity: 25
+  particle: {fileID: 0}
   dir: 0
   hit: {fileID: 2392296502898642347}
 --- !u!82 &2392296502898642347

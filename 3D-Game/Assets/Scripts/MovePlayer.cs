@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 public class MovePlayer : MonoBehaviour
 {
+    public Animator animator;
+    public ParticleSystem particle; 
     public float rotationSpeed, jumpSpeed, gravity;
     public GameObject UI;
     public GameObject LevelManeger;
     Vector3 startDirection;
     public float speedY;
     bool cicle; // false -> outern 
-    bool changeButton;
+    public bool changeButton;
     public bool inmortal;
     public float inmortalTimer;
 
@@ -34,6 +36,8 @@ public class MovePlayer : MonoBehaviour
     public AudioSource damaged;
     public AudioSource teletransport;
     public AudioSource BigJump;
+
+    public bool FirstGrounded;
     void Start()
     {
         // Store starting direction of the player with respect to the axis of the level
@@ -56,6 +60,8 @@ public class MovePlayer : MonoBehaviour
         changeLifeLess = false;
         godMode = false;
         enter = false;
+        animator = gameObject.transform.Find("Character@Idle").GetComponent<Animator>();
+        FirstGrounded = true;
     }
 
     // Update is called once per frame
@@ -73,6 +79,7 @@ public class MovePlayer : MonoBehaviour
             Dashing();
         }
         else if (Input.GetKey(KeyCode.E) && !changeDash){
+            animator.SetBool("Moving", false);
             dashTimer = 0.1f;
             changeDash = true;
             dash.Play();
@@ -82,9 +89,13 @@ public class MovePlayer : MonoBehaviour
         }
         else if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && dashTimer < 0)
         {
+            animator.SetBool("Moving", true);
             Moving();
         }else if (dashTimer < 0 && inmortal){
             inmortal = false;
+            
+        }else{
+            animator.SetBool("Moving", false);
         }
 
         if(inmortalTimer > 0.0f){
@@ -124,6 +135,10 @@ public class MovePlayer : MonoBehaviour
         }
         if (charControl.isGrounded)
         {
+            if(!FirstGrounded) {
+                particle.Play();
+                FirstGrounded = true;
+            }
             if(bigJump && jumpSpeed != 10){
                 jumpSpeed = 15;
             }else if(!bigJump && jumpSpeed != 5){
@@ -134,11 +149,11 @@ public class MovePlayer : MonoBehaviour
             if (Input.GetKey(KeyCode.W)) {
                 speedY = jumpSpeed;
                 jump.Play();
+                FirstGrounded = false;
             }
             
         }
         else{
-
             speedY -= gravity * Time.deltaTime;
         }
         
@@ -146,6 +161,15 @@ public class MovePlayer : MonoBehaviour
             if(foot.activeSelf) foot.SetActive(false);
         }else{
             if(!foot.activeSelf) foot.SetActive(true);
+        }
+
+        if(speedY == -0.5f || speedY == 0.0f){
+            animator.SetBool("Down", false);
+            animator.SetBool("Up", false);
+        }else if(speedY < 0.0f){
+            animator.SetBool("Down", true);
+        }else if(speedY > 0.0f){
+            animator.SetBool("Up", true);
         }
         
         if (enter){
@@ -169,10 +193,11 @@ public class MovePlayer : MonoBehaviour
                     transform.position = pos;
                 }
                 teletransport.Play();
-            }else if(Input.GetKeyUp(KeyCode.Q) && changeButton){
-                changeButton = false;
             }
 
+        }
+        if(!Input.GetKey(KeyCode.Q) && changeButton){
+                changeButton = false;
         }
 
 

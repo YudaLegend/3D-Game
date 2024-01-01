@@ -374,6 +374,7 @@
 "Assets/Scripts/FollowCamera.cs"
 "Assets/Scripts/FollowPlayer.cs"
 "Assets/Scripts/Foot.cs"
+"Assets/Scripts/HitScript.cs"
 "Assets/Scripts/Level1Control.cs"
 "Assets/Scripts/LevelManeger.cs"
 "Assets/Scripts/MovePlayer.cs"

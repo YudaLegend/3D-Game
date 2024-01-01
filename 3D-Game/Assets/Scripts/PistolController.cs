@@ -41,7 +41,6 @@ public class PistolController : MonoBehaviour
 
                 newProjectile = Instantiate(prefab, gridTransform, Quaternion.identity, fat.transform) as GameObject;
 
-
                 nextFire = nextFire - myTime;
                 myTime = 0.0F;
 

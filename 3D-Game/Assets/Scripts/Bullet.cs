@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float rotationSpeed, jumpSpeed, gravity;
-
+    public GameObject particle;
     Vector3 startDirection;
     public bool dir;
     CharacterController charControl;
@@ -26,11 +26,17 @@ public class Bullet : MonoBehaviour
         position = transform.position;
         direction = position - transform.parent.position;
         timer = 2.0f;
+        particle = Resources.Load("Hit") as GameObject;
     }
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("Gun Entered collision with " + other.gameObject.tag);
         if(other.gameObject.tag == "Enemy") {
+            if (particle!= null) {
+                Instantiate(particle, transform.position, Quaternion.identity);
+            } else {
+                Debug.LogError("Failed to load 'Hit' prefab from Resources folder.");
+            }
             Enemy1 e1 = other.gameObject.GetComponent<Enemy1>();
             if (e1 != null)
             {
