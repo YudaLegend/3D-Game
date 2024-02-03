@@ -1,0 +1,778 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.13f1 (5f90a5ebde0f) revision 6262949'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'zh' Physical Memory: 16335 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\UnityHub\2022.3.13f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/youar/Documents/GitHub/VJ-3D-GAME/3D-Game
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+56660
+Successfully changed project path to: C:/Users/youar/Documents/GitHub/VJ-3D-GAME/3D-Game
+C:/Users/youar/Documents/GitHub/VJ-3D-GAME/3D-Game
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [20948] Host "[IP] 192.168.1.130 [Port] 0 [Flags] 2 [Guid] 1823094662 [EditorId] 1823094662 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UI5G16V) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [20948] Host "[IP] 192.168.1.130 [Port] 0 [Flags] 2 [Guid] 1823094662 [EditorId] 1823094662 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UI5G16V) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 42.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.13f1 (5f90a5ebde0f)
+[Subsystems] Discovering subsystems at path D:/UnityHub/2022.3.13f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/youar/Documents/GitHub/VJ-3D-GAME/3D-Game/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon RX 570 Series (ID=0x67df)
+    Vendor:   ATI
+    VRAM:     4074 MB
+    Driver:   31.0.12027.9001
+Initialize mono
+Mono path[0] = 'D:/UnityHub/2022.3.13f1/Editor/Data/Managed'
+Mono path[1] = 'D:/UnityHub/2022.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/UnityHub/2022.3.13f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56400
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/UnityHub/2022.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/UnityHub/2022.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.016635 seconds.
+- Loaded All Assemblies, in  0.874 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.534 seconds
+Domain Reload Profiling: 1409ms
+	BeginReloadAssembly (294ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (70ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (93ms)
+	LoadAllAssembliesAndSetupDomain (397ms)
+		LoadAssemblies (300ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (388ms)
+			TypeCache.Refresh (384ms)
+				TypeCache.ScanAssembly (352ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (535ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (410ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (263ms)
+			ProcessInitializeOnLoadMethodAttributes (118ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.957 seconds
+Refreshing native plugins compatible for Editor in 22.10 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.141 seconds
+Domain Reload Profiling: 3086ms
+	BeginReloadAssembly (359ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (70ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (103ms)
+	LoadAllAssembliesAndSetupDomain (1391ms)
+		LoadAssemblies (1321ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (330ms)
+			TypeCache.Refresh (292ms)
+				TypeCache.ScanAssembly (268ms)
+			ScanForSourceGeneratedMonoScriptInfo (26ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1142ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (836ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (165ms)
+			ProcessInitializeOnLoadAttributes (590ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.18 seconds
+Refreshing native plugins compatible for Editor in 23.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3289 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (29.6 KB). Loaded Objects now: 3784.
+Memory consumption went from 146.4 MB to 146.3 MB.
+Total: 4.498200 ms (FindLiveObjects: 0.419100 ms CreateObjectMapping: 0.415100 ms MarkObjects: 3.588100 ms  DeleteObjects: 0.073600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1703206.490726 seconds.
+  path: Assets/Gradient/Gold 1.asset
+  artifactKey: Guid(40f1095dfbd6d3949a6557286b8349e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gradient/Gold 1.asset using Guid(40f1095dfbd6d3949a6557286b8349e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b2ff0f6a6b0f64407d6da1943acdb08') in 0.019227 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.937162 seconds.
+  path: Assets/Gradient/UI.asset
+  artifactKey: Guid(40f1095dfbd6d3949a6557286b8349e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gradient/UI.asset using Guid(40f1095dfbd6d3949a6557286b8349e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edb6e5531ed12f48eb717c115f377b31') in 0.002099 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 37.865979 seconds.
+  path: Assets/Gradient/UI.asset
+  artifactKey: Guid(40f1095dfbd6d3949a6557286b8349e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gradient/UI.asset using Guid(40f1095dfbd6d3949a6557286b8349e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dd441cdddaefc00df3698fef56975a5') in 0.002234 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 621.101953 seconds.
+  path: Assets/Animation/Character@Sneak Walk.fbx
+  artifactKey: Guid(75dcf6403bc3aa3b6bb3a41007965747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Character@Sneak Walk.fbx using Guid(75dcf6403bc3aa3b6bb3a41007965747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec2eaca61a6c5c1893bfaa1e8ad33aa9') in 0.554038 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 89
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.297 seconds
+Refreshing native plugins compatible for Editor in 21.36 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.282 seconds
+Domain Reload Profiling: 4563ms
+	BeginReloadAssembly (420ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (78ms)
+	RebuildCommonClasses (64ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (59ms)
+	LoadAllAssembliesAndSetupDomain (718ms)
+		LoadAssemblies (965ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (17ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (3283ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (776ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (168ms)
+			ProcessInitializeOnLoadAttributes (523ms)
+			ProcessInitializeOnLoadMethodAttributes (64ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
+Refreshing native plugins compatible for Editor in 25.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3268 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (30.2 KB). Loaded Objects now: 3800.
+Memory consumption went from 150.2 MB to 150.1 MB.
+Total: 3.694000 ms (FindLiveObjects: 0.330500 ms CreateObjectMapping: 0.165400 ms MarkObjects: 3.076000 ms  DeleteObjects: 0.120400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.324 seconds
+Refreshing native plugins compatible for Editor in 32.66 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.909 seconds
+Domain Reload Profiling: 5215ms
+	BeginReloadAssembly (451ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (63ms)
+	RebuildCommonClasses (64ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (62ms)
+	LoadAllAssembliesAndSetupDomain (707ms)
+		LoadAssemblies (993ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (23ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (3909ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (921ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (197ms)
+			ProcessInitializeOnLoadAttributes (642ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (28ms)
+Refreshing native plugins compatible for Editor in 53.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3268 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (30.2 KB). Loaded Objects now: 3803.
+Memory consumption went from 152.1 MB to 152.1 MB.
+Total: 8.124300 ms (FindLiveObjects: 0.545100 ms CreateObjectMapping: 0.294400 ms MarkObjects: 7.191100 ms  DeleteObjects: 0.091900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 436.926032 seconds.
+  path: Assets/Audio/MagicSoundEffects
+  artifactKey: Guid(02b141f5971649044894e1584c628a17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects using Guid(02b141f5971649044894e1584c628a17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ff4e0dacd7895cf0473f1edde0ab223') in 0.002586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.673091 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines
+  artifactKey: Guid(091ed3c3b9f3843a59b38fcca45c0083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines using Guid(091ed3c3b9f3843a59b38fcca45c0083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f56e99babe65c3a847446b36c4116fdf') in 0.001357 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.110826 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter
+  artifactKey: Guid(fb8f77a6254a04cb5b89e8811634de6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter using Guid(fb8f77a6254a04cb5b89e8811634de6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '113c2e5026756b25a08c7cf34a717b2b') in 0.001175 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.073777 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_a_acceleration_fast.wav
+  artifactKey: Guid(be6b6b8c635ac4d179e60099cf278abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_a_acceleration_fast.wav using Guid(be6b6b8c635ac4d179e60099cf278abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd05b2850c849baa561d5fb22d78a8953') in 0.176478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.404719 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_a_engine_1x-to-2x.wav
+  artifactKey: Guid(520766a3ef4d54f77a14ff0323113b7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_a_engine_1x-to-2x.wav using Guid(520766a3ef4d54f77a14ff0323113b7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbb76418c734f80ef59a86a6b80f2c2f') in 0.053615 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_a_engine_2x-to-3x.wav
+  artifactKey: Guid(a63cae1d64cfb44fd8515ac46efe1e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_a_engine_2x-to-3x.wav using Guid(a63cae1d64cfb44fd8515ac46efe1e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '737e2d6612ce932d22da2902dd540ad1') in 0.105020 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_a_engine_3x-to-2x.wav
+  artifactKey: Guid(1b4f41f989270464a93e1d499f066fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_a_engine_3x-to-2x.wav using Guid(1b4f41f989270464a93e1d499f066fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d6944457a9525b89d4bfdb4962b2a7b') in 0.051386 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_b_engine_loop_3x.wav
+  artifactKey: Guid(0c1360c763f0f46a2a1b4c144c22ceaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_b_engine_loop_3x.wav using Guid(0c1360c763f0f46a2a1b4c144c22ceaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3d6e7c7a3833fa5e0d9950e1bbd7f2a') in 0.210492 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_b_engine_2x-to-3x.wav
+  artifactKey: Guid(79376b1dc27aa4ae1bc8b99c69b40c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_b_engine_2x-to-3x.wav using Guid(79376b1dc27aa4ae1bc8b99c69b40c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd10c235d3fd794300e9a6ecd3300dc56') in 0.077341 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_a_engine_3x-to-4x.wav
+  artifactKey: Guid(c3b32865c2ece40a38e68504e20741ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_a_engine_3x-to-4x.wav using Guid(c3b32865c2ece40a38e68504e20741ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec9c192328738741a937cc9aab6397a1') in 0.113828 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000506 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_b_engine_1x-to-2x.wav
+  artifactKey: Guid(6f5758ea111864b178796a8e849cd30d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_b_engine_1x-to-2x.wav using Guid(6f5758ea111864b178796a8e849cd30d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd80424d6d122935d0d1df6b68726f024') in 0.083880 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_b_engine_3x-to-4x.wav
+  artifactKey: Guid(8aebefea6d20b4fc89d3ac09fa358831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_b_engine_3x-to-4x.wav using Guid(8aebefea6d20b4fc89d3ac09fa358831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a9a92dc61baa7857ff4e6084b162ed1') in 0.082545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_a_engine_loop_4x.wav
+  artifactKey: Guid(a9058ab4509134e60af62dfe003b900c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_a_engine_loop_4x.wav using Guid(a9058ab4509134e60af62dfe003b900c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '431149fb5d507d28b6b2f2befcfcbc85') in 0.190834 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_a_engine_4x-to-3x.wav
+  artifactKey: Guid(b8b54c5e34e7a4ccdbc330ed79c0fcfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_a_engine_4x-to-3x.wav using Guid(b8b54c5e34e7a4ccdbc330ed79c0fcfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58718c22d4a107c4553a82988df02fb6') in 0.052096 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_a_engine_2x-to-1x.wav
+  artifactKey: Guid(8f3136080f5ce496a991403345bd6843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_a_engine_2x-to-1x.wav using Guid(8f3136080f5ce496a991403345bd6843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17d05f30c602bce0a13ae7cdd8f5bcb8') in 0.046652 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_a_engine_loop_1x.wav
+  artifactKey: Guid(529d1bedddc674841946d55465648b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_a_engine_loop_1x.wav using Guid(529d1bedddc674841946d55465648b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '666e0c8ffacea98958f2a682c0c9adf0') in 0.126037 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_a_engine_loop_3x.wav
+  artifactKey: Guid(26e265debbefc4a16bc9de7d470c62b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_a_engine_loop_3x.wav using Guid(26e265debbefc4a16bc9de7d470c62b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49334b1375467c201f7376000c25cc4d') in 0.119734 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_b_deceleration_slow.wav
+  artifactKey: Guid(564bf3c11b6d946438f1b9df6c8b0312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Fighter/spacecraft_fighter_b_deceleration_slow.wav using Guid(564bf3c11b6d946438f1b9df6c8b0312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eacb8fb239eb3f327b786bd2a5d41bb') in 0.114705 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.329219 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone
+  artifactKey: Guid(bed6848fa27dc411fa33a27abd9b5536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone using Guid(bed6848fa27dc411fa33a27abd9b5536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a568561693956c5d0f34751c6957203f') in 0.000812 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.068586 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_a_acceleration_fast.wav
+  artifactKey: Guid(47bc1acad1fa54ed3a32c7927ce25e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_a_acceleration_fast.wav using Guid(47bc1acad1fa54ed3a32c7927ce25e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '377ed5980ea01c58384bec89810c8415') in 0.065794 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_a_engine_loop_3x.wav
+  artifactKey: Guid(06f7fb9683ed1405bbdd025ab16c4fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_a_engine_loop_3x.wav using Guid(06f7fb9683ed1405bbdd025ab16c4fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c8770b683b722da572b69cae6ab318b') in 0.150086 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_b_deceleration_slow.wav
+  artifactKey: Guid(7f2d3a3d4ca3f4d0fb998e0aebe21195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_b_deceleration_slow.wav using Guid(7f2d3a3d4ca3f4d0fb998e0aebe21195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd65d3bb1690e2f7693c55fcff8db7b85') in 0.112881 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_b_engine_3x-to-4x.wav
+  artifactKey: Guid(a61919297c5384a0ab31485fada04262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_b_engine_3x-to-4x.wav using Guid(a61919297c5384a0ab31485fada04262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b2a661da4492faffb1e83aeb1d5273f') in 0.054522 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_b_engine_2x-to-3x.wav
+  artifactKey: Guid(53a60d218d6504a15803cf0fcf9a393d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_b_engine_2x-to-3x.wav using Guid(53a60d218d6504a15803cf0fcf9a393d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '365e9be285a182d089578de667c42396') in 0.055885 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_a_engine_loop_4x.wav
+  artifactKey: Guid(4c23f7108ed1a48c0821b9deb7b6768a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_a_engine_loop_4x.wav using Guid(4c23f7108ed1a48c0821b9deb7b6768a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '240bf0737d8b85addd987d04e161790f') in 0.144572 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_a_engine_2x-to-1x.wav
+  artifactKey: Guid(083fb44fdc60444e6a35b5f4b97b38f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_a_engine_2x-to-1x.wav using Guid(083fb44fdc60444e6a35b5f4b97b38f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fb3599814fc891a1615475ed2a60ed8') in 0.051951 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_a_engine_1x-to-2x.wav
+  artifactKey: Guid(e19b96ae264fe42abbe1975bb0556d3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_a_engine_1x-to-2x.wav using Guid(e19b96ae264fe42abbe1975bb0556d3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e56bb2576701aea8a5d6f041c045f8ec') in 0.057012 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_b_deceleration_fast.wav
+  artifactKey: Guid(b86b23ca72c1241ea8c7dd2517afe80c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_b_deceleration_fast.wav using Guid(b86b23ca72c1241ea8c7dd2517afe80c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19d34f3c727f209197219d35e5e8bb1a') in 0.061336 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_b_engine_3x-to-2x.wav
+  artifactKey: Guid(777269b82e1df49b28d672c44b908c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_b_engine_3x-to-2x.wav using Guid(777269b82e1df49b28d672c44b908c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7f586c5f1540de9b8ad9d63b0a4796a') in 0.045551 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_b_engine_loop_1x.wav
+  artifactKey: Guid(b198316f1fa454a7a95726f891016e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_b_engine_loop_1x.wav using Guid(b198316f1fa454a7a95726f891016e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eee220880fa69f6215d3a5299d212340') in 0.145754 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_b_engine_1x-to-2x.wav
+  artifactKey: Guid(772c823735bbb4e3c8086fa71e3d9b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_b_engine_1x-to-2x.wav using Guid(772c823735bbb4e3c8086fa71e3d9b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7160cafe2f8a1b4a30f965ca95a1b329') in 0.061230 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_b_engine_4x-to-3x.wav
+  artifactKey: Guid(c43346f0cd562499ebd946aec7b81206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_b_engine_4x-to-3x.wav using Guid(c43346f0cd562499ebd946aec7b81206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10c4a9a46149d718d5e371a42ee0484a') in 0.058471 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_a_engine_loop_2x.wav
+  artifactKey: Guid(6e650c6b818c840b6b4caa704b7c4e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_a_engine_loop_2x.wav using Guid(6e650c6b818c840b6b4caa704b7c4e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d76190c4f3e135204feefc813c29fd5') in 0.161718 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_b_acceleration_fast.wav
+  artifactKey: Guid(432f1b77fa41642a2be4476c861c17e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Drone/spacecraft_drone_b_acceleration_fast.wav using Guid(432f1b77fa41642a2be4476c861c17e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9d559c7e54df8355d0469cff53c7bf4') in 0.058044 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.622575 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Car
+  artifactKey: Guid(ca8c9b849a72a406988e460da94b00f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Car using Guid(ca8c9b849a72a406988e460da94b00f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e024ab35b9e6c47421b73e0dc387d286') in 0.000943 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.054847 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Car/spacecraft_car_a_acceleration_fast.wav
+  artifactKey: Guid(3a472e77c309842278ca0cf35ef2185d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Car/spacecraft_car_a_acceleration_fast.wav using Guid(3a472e77c309842278ca0cf35ef2185d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c3f19e19c75fdad97b962c19f452240') in 0.062205 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Car/spacecraft_car_a_deceleration_slow.wav
+  artifactKey: Guid(017f1be68f42b491fa29d15506edcf3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Car/spacecraft_car_a_deceleration_slow.wav using Guid(017f1be68f42b491fa29d15506edcf3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc158b0c5bc004e9f8ec662bbad3b4c9') in 0.102421 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Car/spacecraft_car_a_engine_loop_4x.wav
+  artifactKey: Guid(0aea52c52d446494abceafc3d84bf2aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Car/spacecraft_car_a_engine_loop_4x.wav using Guid(0aea52c52d446494abceafc3d84bf2aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed9efdbaeb85939fff37caec26590d2a') in 0.148002 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Car/spacecraft_car_a_engine_loop_2x.wav
+  artifactKey: Guid(ac1c1fad47d2449c5815c8199bc44faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Car/spacecraft_car_a_engine_loop_2x.wav using Guid(ac1c1fad47d2449c5815c8199bc44faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46850d095aee22fdef16b88402d532b4') in 0.173230 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Car/spacecraft_car_a_engine_loop_3x.wav
+  artifactKey: Guid(230a1f98bb8374198a7569a9edb21dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Car/spacecraft_car_a_engine_loop_3x.wav using Guid(230a1f98bb8374198a7569a9edb21dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faa3e2c5e7d997da97162ab9801daf31') in 0.146865 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Car/spacecraft_car_a_engine_2x-to-1x.wav
+  artifactKey: Guid(ebbbfc35394c148a2b68bc73064bf9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Car/spacecraft_car_a_engine_2x-to-1x.wav using Guid(ebbbfc35394c148a2b68bc73064bf9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45db1c5abe87e4895dfcd52651c3b90d') in 0.047730 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Car/spacecraft_car_b_engine_2x-to-3x.wav
+  artifactKey: Guid(02e4ba89e148b4c5a8497a2756bfe494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Car/spacecraft_car_b_engine_2x-to-3x.wav using Guid(02e4ba89e148b4c5a8497a2756bfe494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65d0eba98f068d8ffc2c3d3ad4d42561') in 0.066162 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Car/spacecraft_car_b_acceleration_fast.wav
+  artifactKey: Guid(dbab2299691e14aa6acf58ba476bba9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Car/spacecraft_car_b_acceleration_fast.wav using Guid(dbab2299691e14aa6acf58ba476bba9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3edba40a7ba9d3a9fdac119d925275aa') in 0.065222 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Car/spacecraft_car_b_engine_loop_4x.wav
+  artifactKey: Guid(7ef686a1769f146a7800a2eaf39f88eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Car/spacecraft_car_b_engine_loop_4x.wav using Guid(7ef686a1769f146a7800a2eaf39f88eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af195821c393ea4e28c133e85a9f9560') in 0.151690 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Audio/MagicSoundEffects/Spacecraft Engines/Car/spacecraft_car_a_engine_3x-to-4x.wav
+  artifactKey: Guid(c5776263468d14c4a85d98a29e9c48e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/MagicSoundEffects/Spacecraft Engines/Car/spacecraft_car_a_engine_3x-to-4x.wav using Guid(c5776263468d14c4a85d98a29e9c48e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ae310c7ca108dd4f73e48592c1fb43d') in 0.043511 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.314 seconds
+Refreshing native plugins compatible for Editor in 30.64 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.513 seconds
+Domain Reload Profiling: 4811ms
+	BeginReloadAssembly (397ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (68ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (64ms)
+	LoadAllAssembliesAndSetupDomain (746ms)
+		LoadAssemblies (992ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (23ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (3515ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1034ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (178ms)
+			ProcessInitializeOnLoadAttributes (746ms)
+			ProcessInitializeOnLoadMethodAttributes (87ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (31ms)
+Refreshing native plugins compatible for Editor in 24.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3268 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (30.3 KB). Loaded Objects now: 3808.
+Memory consumption went from 153.2 MB to 153.2 MB.
+Total: 5.636500 ms (FindLiveObjects: 0.615900 ms CreateObjectMapping: 0.406200 ms MarkObjects: 4.552900 ms  DeleteObjects: 0.060000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: 由于线程退出或应用程序请求，已中止 I/O 操作。
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

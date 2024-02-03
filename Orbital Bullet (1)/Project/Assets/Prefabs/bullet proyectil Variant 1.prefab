@@ -1,0 +1,154 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7743460138277487212
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 128107329, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: particle
+      value: 
+      objectReference: {fileID: 1111902047874560030}
+    - target: {fileID: 128107330, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 128107332, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 128107332, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 128107332, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183523210701149701, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: m_Name
+      value: bullet proyectil
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956647713201573055, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956647713201573055, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.633
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956647713201573055, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.481
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956647713201573055, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.031
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956647713201573055, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956647713201573055, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956647713201573055, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956647713201573055, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956647713201573055, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956647713201573055, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956647713201573055, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212531284751086194, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: moveWithTransform
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212531284751086194, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: ForceModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212531284751086194, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: VelocityModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212531284751086194, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: VelocityModule.x.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212531284751086194, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: VelocityModule.y.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212531284751086194, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: VelocityModule.z.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212531284751086194, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: ForceModule.inWorldSpace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212531284751086194, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: VelocityModule.inWorldSpace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7742814866411024305, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      propertyPath: m_Name
+      value: bullet proyectil Variant 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: -8137155366739533458, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7742814866411024305, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8836893272215761127}
+  m_SourcePrefab: {fileID: 100100000, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+--- !u!1 &645280456748509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7742814866411024305, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+  m_PrefabInstance: {fileID: 7743460138277487212}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &8836893272215761127
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645280456748509}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 3, z: 3}
+  m_Center: {x: 0.3125265, y: 0.709406, z: -0.1668115}
+--- !u!198 &1111902047874560030 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7212531284751086194, guid: 7dfb6f66b784e3845a37ed32474bf60b, type: 3}
+  m_PrefabInstance: {fileID: 7743460138277487212}
+  m_PrefabAsset: {fileID: 0}
